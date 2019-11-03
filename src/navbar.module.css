@@ -1,0 +1,11 @@
+.navbar {
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    min-width: 40%;
+}
+
