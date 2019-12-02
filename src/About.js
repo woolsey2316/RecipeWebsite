@@ -5,8 +5,11 @@ import {link} from 'react-router-dom';
 function About() {
     useEffect(() => {
         fetchItems();
-    }, []);
+    }, [query]);
 
+    const [query, setQuery] = useState('chicken');
+    const APP_ID = "bde76692";
+    const APP_KEY = "a779c707df0015efad7cf8cee3391fe1";
     const [items, setItems] = useState([]);
 
     const fetchItems = async () => {
