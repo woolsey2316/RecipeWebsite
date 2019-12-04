@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from 'react';
-import Recipe from "./Recipe";
-import Navbar from "./Navbar";
+import React from 'react';
 import Navigation from "./Navigation";
 import Vegan from "./Vegan";
 import ItemDetail from './ItemDetail';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, NavLink as Link} from 'react-router-dom';
 import About from './About';
 import './App.css';
+import './assets/css/main.css';
 
 //function component const example = (props) => { return <div /> }
 const App = () => {
@@ -43,10 +42,8 @@ const App = () => {
 
 					<nav id="menu">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><Link to="/">Home</Link></li>
+							<li><Link to="/Vegan">Vegan</Link></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
@@ -184,9 +181,6 @@ const App = () => {
 									<div class="contact-method">
 										<span class="icon solid alt fa-home"></span>
 										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
 									</div>
 								</section>
 							</section>
