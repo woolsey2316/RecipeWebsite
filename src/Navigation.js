@@ -1,6 +1,6 @@
 import React from 'react';
-import { link } from 'react-router-dom';
 import { withRouter, Link } from 'react-router-dom';
+import About from './About';
 import styles from './App.css'
 
 function Navigation() {
@@ -11,12 +11,24 @@ function Navigation() {
         <nav>
             <h3>Logo</h3>
             <ul className='nav-links'>
-                <link style={NavStyle} to='/about'>
+                <Link style={NavStyle} to='/about'>
                     <li>About</li>
-                </link>
-                <link to="/recipe-search" style={NavStyle}>
+                </Link>
+                <Link style={NavStyle} to='/keto'>
+                    <li>Keto</li>
+                </Link>
+                <Link style={NavStyle} to='/glutenFree'>
+                    <li>GlutenFree</li>
+                </Link>
+                <Link style={NavStyle} to='/paleo'>
+                    <li>Paleo</li>
+                </Link>
+                <Link style={NavStyle} to='/lowCarb'>
+                    <li>LowCarb</li>
+                </Link>
+                <Link to="/recipe-search" style={NavStyle}>
                     <li> Recipe Search</li>
-                </link>
+                </Link>
             </ul>
 
         </nav>

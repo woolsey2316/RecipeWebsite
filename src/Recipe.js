@@ -8,15 +8,16 @@ const Recipe = ({title,calories,image,ingredients}) => {
     }
     return(
         <div className = {style.recipe} >
-            <h1>{title}</h1>
-            <ol>
-                {ingredients.map(ingredient => (
-                    <li>{ingredient.text}</li>
-                ))}
-            </ol>
-            <p>{calories}</p>
-            <img src={image} alt="" />
-
+            <img className = {style.image} src={image} alt="" />
+            <div >
+                <h1 className = {style.h1}>{title}</h1>
+                <ul>
+                    {ingredients.map(ingredient => (
+                        <li className = {style.li}>{ingredient.text}</li>
+                    ))}
+                </ul>
+                <p>{Math.round(calories) + " calories"}</p>
+            </div>
         </div>
     );
 }
