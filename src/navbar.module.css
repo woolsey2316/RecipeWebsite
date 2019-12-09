@@ -1,11 +1,22 @@
-.navbar {
-    border-radius: 10px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: rgb(255, 255, 255);
-    align-items: center;
-    min-width: 40%;
+nav {
+    background-color:#dbe9eb;
+    color:#333333;
+}
+
+.ul {
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    display: inline;
+    text-decoration-style: none;
+
+}
+
+li:hover {
+    color: #b6956a;
 }
 

@@ -7,15 +7,17 @@ import Paleo from "./Paleo";
 import LowCarb from "./LowCarb";
 import {BrowserRouter as Router, Switch, Route, NavLink as Link} from 'react-router-dom';
 import About from './About';
+import NavStyle from './navbar.module.css';
 import './App.css';
 import './assets/css/main.css';
 
 //function component const example = (props) => { return <div /> }
 const App = () => {
   return (
-    <Router>
+	<Router>
+		<body>
 		<div className="App">
-		<Navigation/>
+		<Navigation style = {NavStyle}/>
 		<Switch>
 
 			<Route path="/about" component={About} />
@@ -26,22 +28,22 @@ const App = () => {
 			<Route path="/lowCarb" component={LowCarb} /> 
 		</Switch>
 		
-		<title>Forty by HTML5 UP</title>
+		<title>Recipe Database</title>
 		<meta charSet="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap" rel="stylesheet"></link>
-		
+
 			<div id="wrapper">
-			<header id="header" className="alt">
-				<a href="/" className="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+			<header id="header" className="reveal alt">
+				<a href="/" className="logo"><strong>Recipe database</strong> <span>for various niches</span></a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
 			</header>
 
-					<nav id="menu">
+					<nav style= {NavStyle} id="menu">
 						<ul className="links">
 							<li><Link to="/">Home</Link></li>
 							<li><Link to="/Vegan">Vegan</Link></li>
@@ -160,8 +162,10 @@ const App = () => {
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js"></script>	
+			
 		</div>
+		</body>
     </Router>
   );
  

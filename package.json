@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.6.0",
+    "jquery": "^3.4.1",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",

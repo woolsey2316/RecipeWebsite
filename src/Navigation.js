@@ -1,33 +1,30 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import About from './About';
-import styles from './App.css'
+import NavStyle from './navbar.module.css';
 
 function Navigation() {
-    const NavStyle = {
-        color: 'white'
-    };
+    
     return (
-        <nav>
+        <nav style={NavStyle}>
             <h3>Logo</h3>
-            <ul className='nav-links'>
-                <Link style={NavStyle} to='/about'>
-                    <li>About</li>
-                </Link>
-                <Link style={NavStyle} to='/keto'>
+            <ul style={NavStyle}>
+                <Link to='/keto'>
                     <li>Keto</li>
                 </Link>
-                <Link style={NavStyle} to='/glutenFree'>
+                <Link to='/glutenFree'>
                     <li>GlutenFree</li>
                 </Link>
-                <Link style={NavStyle} to='/paleo'>
+                <Link to='/paleo'>
                     <li>Paleo</li>
                 </Link>
-                <Link style={NavStyle} to='/lowCarb'>
+                <Link to='/lowCarb'>
                     <li>LowCarb</li>
                 </Link>
-                <Link to="/recipe-search" style={NavStyle}>
-                    <li> Recipe Search</li>
+                <Link to="/recipe-search">
+                    <li> Search</li>
+                </Link>
+                <Link to='/about'>
+                    <li>About</li>
                 </Link>
             </ul>
 
