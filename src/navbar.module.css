@@ -3,7 +3,7 @@ nav {
     color:#333333;
 }
 
-.ul {
+ul {
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
     text-decoration-style: none;
@@ -13,7 +13,7 @@ li {
     font-family: 'Raleway', sans-serif;
     display: inline;
     text-decoration-style: none;
-
+    padding: 20px;
 }
 
 li:hover {

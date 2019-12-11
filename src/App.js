@@ -5,9 +5,13 @@ import GlutenFree from "./GlutenFree";
 import Keto from "./Keto";
 import Paleo from "./Paleo";
 import LowCarb from "./LowCarb";
-import {BrowserRouter as Router, Switch, Route, NavLink as Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import About from './About';
+import Tile from './Tile';
+import Overview from './Overview';
+import Footer from './Footer';
 import NavStyle from './navbar.module.css';
+import Banner from './Banner';
 import './App.css';
 import './assets/css/main.css';
 
@@ -36,125 +40,29 @@ const App = () => {
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap" rel="stylesheet"></link>
 
 			<div id="wrapper">
-			<header id="header" className="reveal alt">
-				<a href="/" className="logo"><strong>Recipe database</strong> <span>for various niches</span></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+				<header id="header" className="reveal alt">
+					<a href="/" className="logo"><strong>Recipe database</strong> <span>for various dietary requirements</span></a>
+				</header>
 
-					<nav style= {NavStyle} id="menu">
-						<ul className="links">
-							<li><Link to="/">Home</Link></li>
-							<li><Link to="/Vegan">Vegan</Link></li>
-						</ul>
-						<ul className="actions stacked">
-							<li><a href="#" className="button primary fit">Get Started</a></li>
-							<li><a href="#" className="button fit">Log In</a></li>
-						</ul>
-					</nav>
+				<Banner id="banner" className="major" />
 
-					<section id="banner" className="major">
-						<div className="inner">
-							<header className="major">
-								<h1>A Recipe Database</h1>
-							</header>
-							<div className="content">
-								<p>Triple-tested recipes, expert cooking tips and food inspiration</p>
-								<ul className="actions">
-									<li><a href="#one" className="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
+				<div id="main">
+					<section id="one" className="tiles">
+						<Tile title="Vegan" url="./images/pic01.jpg" description= "No meat, poultry, fish, dairy, eggs or honey"/>
+						<Tile title="Sugar Conscious" url="./images/pic02.jpg" description= "Less than 4g of sugar per serving"/>
+						<Tile title="Gluten Free" url="./images/pic03.jpg" description= "free from wheat, barley, rye, and oats."/>
+						<Tile title="Paleo" url="./images/pic04.jpg" description= "foods that in the past could only be obtained by hunting and gathering."/>
+						<Tile title="Keto" url="./images/pic05.jpg" description= "Maximum 7 grams of net carbs per serving"/>
+						<Tile title="Low Carb" url="./images/pic06.jpg" description= "Less than 20% of total calories from carbs"/>
 					</section>
 
-					<div id="main">
-							<section id="one" className="tiles">
-								<article>
-									<span className="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/vegan" className="link">Vegan</a></h3>
-										<p>No meat, poultry, fish, dairy, eggs or honey</p>
-									</header>
-								</article>
-								<article>
-									<span className="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/sugarConscious" className="link">Sugar Conscious</a></h3>
-										<p>Less than 4g of sugar per serving</p>
-									</header>
-								</article>
-								<article>
-									<span className="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/glutenFree" className="link">Gluten Free</a></h3>
-										<p> free from wheat, barley, rye, and oats.</p>
-									</header>
-								</article>
-								<article>
-									<span className="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/paleo" className="link">Paleo</a></h3>
-										<p>foods that in the past could only be obtained by hunting and gathering.</p>
-									</header>
-								</article>
-								<article>
-									<span className="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/keto" className="link">Keto</a></h3>
-										<p>Maximum 7 grams of net carbs per serving</p>
-									</header>
-								</article>
-								<article>
-									<span className="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/lowCarb" className="link">Low Carb</a></h3>
-										<p>Less than 20% of total calories from carbs</p>
-									</header>
-								</article>
-							</section>
+					<section id="two">
+						<Overview/>
+					</section>
 
-							<section id="two">
-								<div className="inner">
-									<header className="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul className="actions">
-										<li><a href="landing.html" className="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
+				</div>
 
-					</div>
-
-					<footer id="footer">
-						<div className="inner">
-							<ul className="icons">
-								<li><a href="#" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
-								<li><a href="#" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
-								<li><a href="#" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
-								<li><a href="#" className="icon brands alt fa-github"><span className="label">GitHub</span></a></li>
-								<li><a href="#" className="icon brands alt fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
-							</ul>
-							<ul className="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
+				<Footer/>
 			</div>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

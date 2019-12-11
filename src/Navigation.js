@@ -12,13 +12,13 @@ function Navigation() {
                     <li>Keto</li>
                 </Link>
                 <Link to='/glutenFree'>
-                    <li>GlutenFree</li>
+                    <li>Gluten Free</li>
                 </Link>
                 <Link to='/paleo'>
                     <li>Paleo</li>
                 </Link>
                 <Link to='/lowCarb'>
-                    <li>LowCarb</li>
+                    <li>Low Carb</li>
                 </Link>
                 <Link to="/recipe-search">
                     <li> Search</li>
