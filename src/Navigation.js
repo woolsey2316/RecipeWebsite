@@ -12,6 +12,9 @@ function Navigation() {
                     <img src={logo} alt="logo"></img>
                 </div>
                 <ul>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to='/'>
+                        <li>Home</li>
+                    </NavLink>
                     <NavLink activeStyle={{ color: '#b6956a' }} to='/keto'>
                         <li>Keto</li>
                     </NavLink>
