@@ -1,34 +1,38 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import NavStyle from './navbar.module.css';
+import logo from './images/logo.png'
 
 function Navigation() {
     
     return (
-        <nav style={NavStyle}>
-            <h3>Logo</h3>
-            <ul style={NavStyle}>
-                <Link to='/keto'>
-                    <li>Keto</li>
-                </Link>
-                <Link to='/glutenFree'>
-                    <li>Gluten Free</li>
-                </Link>
-                <Link to='/paleo'>
-                    <li>Paleo</li>
-                </Link>
-                <Link to='/lowCarb'>
-                    <li>Low Carb</li>
-                </Link>
-                <Link to="/recipe-search">
-                    <li> Search</li>
-                </Link>
-                <Link to='/about'>
-                    <li>About</li>
-                </Link>
-            </ul>
-
-        </nav>
+        <div style={NavStyle} className="navigationContainer">
+            <nav>
+                <div className="container">
+                    <img src={logo} alt="logo"></img>
+                </div>
+                <ul>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to='/keto'>
+                        <li>Keto</li>
+                    </NavLink>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to='/glutenFree'>
+                        <li>Gluten Free</li>
+                    </NavLink>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to='/paleo'>
+                        <li>Paleo</li>
+                    </NavLink>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to='/lowCarb'>
+                        <li>Low Carb</li>
+                    </NavLink>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to="/recipe-search">
+                        <li> Search</li>
+                    </NavLink>
+                    <NavLink activeStyle={{ color: '#b6956a' }} to='/about'>
+                        <li>About</li>
+                    </NavLink>
+                </ul>
+            </nav>
+        </div>
     );
 }
 

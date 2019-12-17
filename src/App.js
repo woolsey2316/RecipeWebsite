@@ -1,12 +1,7 @@
 import React from 'react';
 import Navigation from "./Navigation";
-import Vegan from "./Vegan";
-import GlutenFree from "./GlutenFree";
-import Keto from "./Keto";
-import Paleo from "./Paleo";
-import LowCarb from "./LowCarb";
+import RecipeQuery from "./RecipeQuery";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import About from './About';
 import Tile from './Tile';
 import Overview from './Overview';
 import Footer from './Footer';
@@ -14,6 +9,7 @@ import NavStyle from './navbar.module.css';
 import Banner from './Banner';
 import './App.css';
 import './assets/css/main.css';
+import './assets/css/noscript.css';
 
 //function component const example = (props) => { return <div /> }
 const App = () => {
@@ -24,29 +20,22 @@ const App = () => {
 		<Navigation style = {NavStyle}/>
 		<Switch>
 
-			<Route path="/about" component={About} />
-			<Route path="/vegan" component={Vegan} />
-			<Route path="/keto" component={Keto} />
-			<Route path="/glutenFree" component={GlutenFree} />
-			<Route path="/paleo" component={Paleo} /> 
-			<Route path="/lowCarb" component={LowCarb} /> 
+			<Route path="/about" ><RecipeQuery append=''></RecipeQuery></Route>
+			<Route path="/vegan" ><RecipeQuery append="&health=vegan"/></Route>
+			<Route path="/keto" ><RecipeQuery append="&diet=keto"/></Route>
+			<Route path="/glutenFree" ><RecipeQuery append="&health=gluten-free"/></Route>
+			<Route path="/paleo" ><RecipeQuery append="&diet=vegan"/></Route> 
+			<Route path="/lowCarb" ><RecipeQuery append="&diet=low-carb"/></Route> 
 		</Switch>
-		
-		<title>Recipe Database</title>
-		<meta charSet="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap" rel="stylesheet"></link>
-
 			<div id="wrapper">
 				<header id="header" className="reveal alt">
-					<a href="/" className="logo"><strong>Recipe database</strong> <span>for various dietary requirements</span></a>
+					<a href="/" className="logo"><strong>Recipes</strong> <span>for various dietary requirements</span></a>
 				</header>
 
-				<Banner id="banner" className="major" />
+				
 
 				<div id="main">
+				<Banner id="banner" className="major" />
 					<section id="one" className="tiles">
 						<Tile title="Vegan" url="./images/pic01.jpg" description= "No meat, poultry, fish, dairy, eggs or honey"/>
 						<Tile title="Sugar Conscious" url="./images/pic02.jpg" description= "Less than 4g of sugar per serving"/>

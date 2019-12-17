@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: #fcfbfb;
 }
 
 .navigation {
@@ -20,11 +19,16 @@
   list-style: none;
 }
 
+.nav-links:active {
+  color: #b6956a;
+}
+
 .search-form {
   min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #b6956a;
 }
 
 .search-bar {

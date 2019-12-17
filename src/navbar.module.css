@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap");
+
 nav {
     background-color:#dbe9eb;
     color:#333333;
@@ -18,5 +20,32 @@ li {
 
 li:hover {
     color: #b6956a;
+}
+
+li:active {
+    color:#b6956a;
+}
+
+a:active {
+    color:#b6956a;
+}
+
+nav:active {
+    color:#b6956a;
+}
+
+Link:active {
+    color:#b6956a;
+}
+
+.navigationContainer nav .container {
+    width: 20px;
+    height: 20px;
+}
+
+/* resize images */
+.navigationContainer nav .container img {
+    width: 100%;
+    height: auto;
 }
 
