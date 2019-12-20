@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Recipe from './Recipe';
-import './App.css';
+import './assets/css/App.css';
 
 const About = () => {
     

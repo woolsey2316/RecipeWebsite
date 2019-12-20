@@ -4,6 +4,13 @@ import Overview from './Overview';
 import Footer from './Footer';
 import Banner from './Banner';
 
+const imagePath1 = process.env.PUBLIC_URL + '/images/pic01.jpg';
+const imagePath2 = process.env.PUBLIC_URL + '/images/pic02.jpg';
+const imagePath3 = process.env.PUBLIC_URL + '/images/pic03.jpg';
+const imagePath4 = process.env.PUBLIC_URL + '/images/pic04.jpg';
+const imagePath5 = process.env.PUBLIC_URL + '/images/pic05.jpg';
+const imagePath6 = process.env.PUBLIC_URL + '/images/pic06.jpg';
+
 const Home = ()=> {
     return (
         <div id="wrapper">
@@ -14,12 +21,12 @@ const Home = ()=> {
             <div id="main">
                 <Banner id="banner" className="major" />
                 <section id="one" className="tiles">
-                    <Tile title="Vegan" url="./images/pic01.jpg" description= "No meat, poultry, fish, dairy, eggs or honey"/>
-                    <Tile title="Sugar Conscious" url="./images/pic02.jpg" description= "Less than 4g of sugar per serving"/>
-                    <Tile title="Gluten Free" url="./images/pic03.jpg" description= "free from wheat, barley, rye, and oats."/>
-                    <Tile title="Paleo" url="./images/pic04.jpg" description= "foods that in the past could only be obtained by hunting and gathering."/>
-                    <Tile title="Keto" url="./images/pic05.jpg" description= "Maximum 7 grams of net carbs per serving"/>
-                    <Tile title="Low Carb" url="./images/pic06.jpg" description= "Less than 20% of total calories from carbs"/>
+                    <Tile title="Vegan" url= {imagePath1} description= "No meat, poultry, fish, dairy, eggs or honey"/>
+                    <Tile title="Sugar Conscious" url= {imagePath2}  description= "Less than 4g of sugar per serving"/>
+                    <Tile title="Gluten Free" url= {imagePath3} description= "free from wheat, barley, rye, and oats."/>
+                    <Tile title="Paleo" url= {imagePath4} description= "foods that in the past could only be obtained by hunting and gathering."/>
+                    <Tile title="Keto" url= {imagePath5} description= "Maximum 7 grams of net carbs per serving"/>
+                    <Tile title="Low Carb" url= {imagePath6} description= "Less than 20% of total calories from carbs"/>
                 </section>
 
                 <section id="two">

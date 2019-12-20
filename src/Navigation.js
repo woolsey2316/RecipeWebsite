@@ -1,7 +1,9 @@
 import React from 'react';
 import {NavLink } from 'react-router-dom';
-import NavStyle from './navbar.module.css';
-import logo from './images/logo.png'
+import NavStyle from './assets/css/navbar.module.css';
+
+const iconPath = process.env.PUBLIC_URL + '/images/logo.png';
+
 
 function Navigation() {
     
@@ -9,29 +11,32 @@ function Navigation() {
         <div style={NavStyle} className="navigationContainer">
             <nav>
                 <div className="container">
-                    <img src={logo} alt="logo"></img>
+                    <img src={iconPath} alt="logo"></img>
                 </div>
-                <ul>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to='/'>
-                        <li>Home</li>
+                <ul style={NavStyle}>
+                    <NavLink  exact activeStyle={{ color: '#b6956a' }} to='/'>
+                        <li style={NavStyle}>HOME</li>
                     </NavLink>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to='/keto'>
-                        <li>Keto</li>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to='/vegan'>
+                        <li style={NavStyle}>VEGAN</li>
                     </NavLink>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to='/glutenFree'>
-                        <li>Gluten Free</li>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to='/keto'>
+                        <li style={NavStyle}>KETO</li>
                     </NavLink>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to='/paleo'>
-                        <li>Paleo</li>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to='/glutenFree'>
+                        <li style={NavStyle}>GLUTEN FREE</li>
                     </NavLink>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to='/lowCarb'>
-                        <li>Low Carb</li>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to='/paleo'>
+                        <li style={NavStyle}>PALEO</li>
                     </NavLink>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to="/recipe-search">
-                        <li> Search</li>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to='/lowCarb'>
+                        <li style={NavStyle}>LOW CARB</li>
                     </NavLink>
-                    <NavLink activeStyle={{ color: '#b6956a' }} to='/about'>
-                        <li>About</li>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to="/recipe-search">
+                        <li style={NavStyle}>SEARCH</li>
+                    </NavLink>
+                    <NavLink  activeStyle={{ color: '#b6956a' }} to='/about'>
+                        <li style={NavStyle}>ABOUT</li>
                     </NavLink>
                 </ul>
             </nav>

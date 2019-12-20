@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap");
+
+.recipe {
+    box-shadow: 0px 5px 10px #e1dede;
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    min-width: 30%;
+    max-width: 45%;
+}
+
+.span {
+    border-bottom: 2px solid #b6956a;
+
+}
+
+.h3 {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Abril Fatface', cursive;
+    line-height: 1.5;
+
+}
+
+.h2 {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    
+}
+
+.h1 {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.p {
+    color:black;
+    font-family: 'Playfair Display', serif;
+}
+
+.ul {
+    color:black;
+    font-family: 'Playfair Display', serif;
+    line-height:1.1;
+    padding:1;
+}
+
+.li {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    list-style-type: none;
+    line-height: 1.1;
+    display: list-item;
+    padding: 5px;
+
+}
+
+.li:hover {
+    color:black;
+}
+
+.image {
+    width: 75%;
+    height: 100%;
+    padding:1%;
+
+}
+
+.form {
+    background-color: black;
+}
+

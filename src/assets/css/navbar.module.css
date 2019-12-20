@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap");
+
+nav {
+    background-color:#bbdfe4;
+    color:#333333;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+ul {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline;
+    text-decoration-style: none;
+    padding: 20px;
+}
+
+li:hover {
+    color: #b6956a;
+}
+
+
+/* resize images */
+.navigationContainer nav .container img {
+    width: 100%;
+    height: auto;
+}
+

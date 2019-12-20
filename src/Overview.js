@@ -5,7 +5,7 @@ const Overview = ({title,description,url}) => {
     return (
         <div className="inner">
             <header className="major">
-                <h2>Massa libero</h2>
+                <h2>Purpose</h2>
             </header>
             <p>Have a think about your group of friends and colleagues right now. 
             When was the last time you ate together and what did they order? Chances 
