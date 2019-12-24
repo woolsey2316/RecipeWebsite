@@ -4,6 +4,7 @@ import RecipeQuery from "./RecipeQuery";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Home';
 import NavStyle from './assets/css/navbar.module.css';
+import Querystyle from "./assets/css/recipequery.module.css"
 
 import './assets/css/App.css';
 import './assets/css/main.css';
@@ -18,12 +19,12 @@ const App = () => {
 		<Navigation style = {NavStyle}/>
 		<Switch>
 			<Route exact path="/" ><Home></Home></Route>
-			<Route exact path="/about" ><RecipeQuery append=''></RecipeQuery></Route>
-			<Route exact path="/vegan" ><RecipeQuery append="&health=vegan"/></Route>
-			<Route exact path="/keto" ><RecipeQuery append="&health=keto"/></Route>
-			<Route exact path="/glutenFree" ><RecipeQuery append="&health=gluten-free"/></Route>
-			<Route exact path="/paleo" ><RecipeQuery append="&health=paleo"/></Route> 
-			<Route exact path="/lowCarb" ><RecipeQuery append="&diet=low-carb"/></Route> 
+			<Route exact path="/about" ><RecipeQuery src={Querystyle} append=''></RecipeQuery></Route>
+			<Route exact path="/vegan" ><RecipeQuery src={Querystyle} append="&health=vegan"/></Route>
+			<Route exact path="/keto" ><RecipeQuery src={Querystyle} append="&health=keto"/></Route>
+			<Route exact path="/glutenFree" ><RecipeQuery src={Querystyle} append="&health=gluten-free"/></Route>
+			<Route exact path="/paleo" ><RecipeQuery src={Querystyle} append="&health=paleo"/></Route> 
+			<Route exact path="/lowCarb" ><RecipeQuery src={Querystyle} append="&diet=low-carb"/></Route> 
 		</Switch>
 		</div>
 

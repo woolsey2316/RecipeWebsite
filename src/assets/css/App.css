@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   min-height: 100vh;
 }
 
@@ -21,27 +20,6 @@
 
 .nav-links:active {
   color: #b6956a;
-}
-
-.search-form {
-  min-height: 10vh;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.search-bar {
-  width: 50%;
-  padding: 10px;
-  border: #b6956a;
-  background: #b6956a;
-}
-
-.search-button {
-  background: #b6956a;
-  border: none;
-  padding: 3px 20px;
-  border-radius: 25px;
 }
 
 .recipes {

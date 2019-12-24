@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Recipe from './Recipe';
+import style from "./assets/css/recipequery.module.css"
+
 
 function RecipeQuery(props) {
 
@@ -34,9 +36,9 @@ function RecipeQuery(props) {
     }
 
     return (
-        <div>
-            <form onSubmit={getSearch} className="search-form">
-                <input className="search-bar" 
+        <div src= {style} className="App">
+            <form src= {style} onSubmit={getSearch} className="search-form">
+                <input src={style.input}
                 type = "text" 
                 value={search} 
                 onChange={updateSearch}

@@ -5,9 +5,9 @@
     margin: 10px 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background: rgb(255, 255, 255);
+    justify-content: space-between;
     align-items: center;
+    background: rgb(255, 255, 255);
     min-width: 30%;
     max-width: 45%;
 }
@@ -23,6 +23,7 @@
     font-family: 'Playfair Display', serif;
     font-family: 'Abril Fatface', cursive;
     line-height: 1.5;
+    text-align: center;
 
 }
 
@@ -43,8 +44,11 @@
 }
 
 .p {
-    color:black;
+    color:#b6956a;
     font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .ul {
@@ -57,11 +61,11 @@
 .li {
     color:black;
     font-family: 'Raleway', sans-serif;
-    text-align: left;
     list-style-type: none;
     line-height: 1.1;
     display: list-item;
     padding: 5px;
+    text-align: center;
 
 }
 
@@ -72,8 +76,7 @@
 .image {
     width: 75%;
     height: 100%;
-    padding:1%;
-
+    padding: 1%;
 }
 
 .form {

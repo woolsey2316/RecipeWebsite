@@ -1,0 +1,16 @@
+article {
+    vertical-align: bottom;
+}
+
+article:hover header h3> a {
+    text-shadow:1px 1px #000;
+}
+
+article:hover header > p {
+    
+    background-color: #b6956a;
+}
+
+
+  
+  

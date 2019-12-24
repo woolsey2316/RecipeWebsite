@@ -4,12 +4,12 @@ import Overview from './Overview';
 import Footer from './Footer';
 import Banner from './Banner';
 
-const imagePath1 = process.env.PUBLIC_URL + '/images/pic01.jpg';
-const imagePath2 = process.env.PUBLIC_URL + '/images/pic02.jpg';
-const imagePath3 = process.env.PUBLIC_URL + '/images/pic03.jpg';
-const imagePath4 = process.env.PUBLIC_URL + '/images/pic04.jpg';
-const imagePath5 = process.env.PUBLIC_URL + '/images/pic05.jpg';
-const imagePath6 = process.env.PUBLIC_URL + '/images/pic06.jpg';
+const imagePath1 = './images/vegan.jpg';
+const imagePath2 = './images/sugar-conscious.jpg';
+const imagePath3 = './images/gluten-free.jpg';
+const imagePath4 = './images/paleo_diet.jpg';
+const imagePath5 = './images/keto.jpg';
+const imagePath6 = './images/low-carb.jpg';
 
 const Home = ()=> {
     return (

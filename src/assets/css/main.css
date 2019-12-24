@@ -12,7 +12,7 @@ iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, fieldset,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: center;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -172,10 +172,6 @@ input, select, textarea {
 
 	em, i {
 		font-style: italic;
-	}
-
-	p {
-		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1773,7 +1769,7 @@ input, select, textarea {
 		width: -webkit-max-content;
 		width: -ms-max-content;
 		width: max-content;
-		margin-bottom: 2em;
+		
 	}
 
 		header.major > :first-child {
@@ -2231,8 +2227,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
+		padding: 1em;
 	}
 
 		ul li {
@@ -2732,7 +2727,7 @@ input, select, textarea {
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
-			align-items: center;
+			align-items: flex-end;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
