@@ -11,7 +11,7 @@ function Navigation() {
         <div style={NavStyle} className="navigationContainer">
             <nav>
                 <div className="container">
-                    <img src={iconPath} alt="logo"></img>
+                    <img src={iconPath} alt="logo" height="60"></img>
                 </div>
                 <ul style={NavStyle.ul}>
                     <NavLink  exact activeStyle={{ color: '#b6956a' }} to='/'>

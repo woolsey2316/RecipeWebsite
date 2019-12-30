@@ -8,7 +8,7 @@ nav {
     text-align: center;
 }
 
-ul {
+nav ul {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -16,13 +16,19 @@ ul {
     text-decoration-style: none;
 }
 
-li {
+nav li {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 600;
     display: inline;
     text-decoration-style: none;
     padding: 3px 20px 3px 20px;
+}
+
+nav div img {
+    height: 120px;
+    padding-top: 16px; 
+
 }
 
 li:hover {

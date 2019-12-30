@@ -15,22 +15,23 @@
     border: 4px  #b6956a;
     padding: 20px;
   }
+
 form input[type="text"] {
-    background: white;
-    color: #000;
-    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    cursor: default;
     display: inline-block;
-    font-size: 1em;
     font-weight: 600;
-    height: 3.5em;
     line-height: 1em;
     text-align: left;
     text-decoration: none;
-    width: 30%;
-    border-radius: 10px;
     border-color: #b6956a;
+    box-shadow: 0 0 0 2px #bbdfe4;
     border: 4px;
-    padding: 1px;
+    padding: 0px 0px 0px 70px;
+    margin: 0 2em 0 0;
+    background: white;
+    background: left 50% / 5% 60% url(../images/search.svg) no-repeat scroll;
 }
 
 form search-bar {
