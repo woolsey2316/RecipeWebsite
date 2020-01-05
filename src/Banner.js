@@ -7,7 +7,7 @@ const Banner = () => {
                 <h1>Recipe Search Engine</h1>
             </header>
             <div className="content">
-                <p>Triple-tested recipes, expert cooking tips and food inspiration</p>
+                <p>A variety of organic recipes and food inspiration for various dietary inclinations</p>
                 <ul className="actions">
                     <li><a href="#one" className="button next scrolly">Get Started</a></li>
                 </ul>

@@ -28,7 +28,7 @@ form input[type="text"] {
     border-color: #b6956a;
     box-shadow: 0 0 0 2px #bbdfe4;
     border: 4px;
-    padding: 0px 0px 0px 70px;
+    padding: 0px 0px 0px 65px;
     margin: 0 2em 0 0;
     background: white;
     background: left 50% / 5% 60% url(../images/search.svg) no-repeat scroll;
@@ -46,4 +46,13 @@ form button {
     border: none;
     padding: 3px 20px;
     border-radius: 25px;
+}
+
+div .recipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: white;
 }

@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Recipe from './Recipe';
 import style from "./assets/css/recipequery.module.css"
 
-
 function RecipeQuery(props) {
 
     const APP_ID = "bde76692";
@@ -13,7 +12,6 @@ function RecipeQuery(props) {
     const [query, setQuery] = useState('chocolate');
 
     function handleErrors(response) {
-        console.log("error handled here");
         if (!response.ok) {
             throw Error(response.statusText);
         }
@@ -22,17 +20,16 @@ function RecipeQuery(props) {
     }
     useEffect(() => {
       async function getRecipes() {
-          await fetch(
+        fetch(
               `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}${props.append}`
           )
           .then(handleErrors)
-          .then(function(response) {
-            const data = response.json();
+          .then(async function(response) {
+            const data = await response.json();
             console.log(data);
             setRecipes(data.hits);
           }).catch(error => {
               console.log(error); 
-              console.log("error handled here");
             });
       }
       getRecipes();
@@ -50,7 +47,7 @@ function RecipeQuery(props) {
     }
 
     return (
-        <div src= {style} className="App">
+        <div src= {style.background} className="App">
             <form src= {style} onSubmit={getSearch} className="search-form">
                 <input src={style.input}
                 type = "text" 
@@ -61,13 +58,13 @@ function RecipeQuery(props) {
             </form>
             <div className="recipes">
                 {recipes.map(recipe => (
-                <Recipe 
-                title={recipe.recipe.label} 
-                calories={recipe.recipe.calories}
-                image={recipe.recipe.image}
-                ingredients={recipe.recipe.ingredients}
-                url={recipe.recipe.url} />
-                ))}
+                    <Recipe
+                    key={recipe.recipe.url} 
+                    title={recipe.recipe.label} 
+                    calories={recipe.recipe.calories}
+                    image={recipe.recipe.image}
+                    ingredients={recipe.recipe.ingredients}
+                    url={recipe.recipe.url} />))}
             </div>
         </div>
     );

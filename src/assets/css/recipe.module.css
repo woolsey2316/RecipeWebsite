@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap");
 
 .recipe {
-    box-shadow: 0px 5px 10px #e1dede;
     margin: 10px 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(255, 255, 255);
-    min-width: 30%;
-    max-width: 45%;
+    display:inline-block;
+    max-width: 30%;
+    
+}
+
+.div {
+    position: relative;
+    
 }
 
 .span {
@@ -24,6 +24,11 @@
     font-family: 'Abril Fatface', cursive;
     line-height: 1.5;
     text-align: center;
+    padding: 1%;
+}
+
+.h3:hover {
+    color:rgb(78, 72, 72);
 
 }
 
@@ -49,13 +54,14 @@
     font-size: 20px;
     font-weight: 500;
     text-align: center;
+    padding: 1%;
 }
 
 .ul {
     color:black;
     font-family: 'Playfair Display', serif;
     line-height:1.1;
-    padding:1;
+    padding: 1%;
 }
 
 .li {
@@ -65,7 +71,8 @@
     line-height: 1.1;
     display: list-item;
     padding: 5px;
-    text-align: center;
+    text-align: left;
+    max-width: 250px;
 
 }
 
@@ -74,12 +81,24 @@
 }
 
 .image {
-    width: 75%;
-    height: 100%;
     padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 10px #e1dede;
+
+}
+
+.image:hover {
+    opacity: 95%;
 }
 
 .form {
     background-color: black;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
 
