@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap");
+@import "colours";
+@import "fonts";
+
+.nav {
+    background-color:#bbdfe4;
+    color:#333333;
+    font-size: $font-14px;
+    font-weight: 600;
+    text-align: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: -moz-center;
+    -webkit-align-items: -webkit-center;
+    -ms-align-items: -ms-center;
+    align-items: center;
+    -moz-justify-content: -moz-flex-end;
+    -webkit-justify-content: -webkit-flex-end;
+    -ms-justify-content: -ms-flex-end;
+    justify-content: space-between;
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    line-height: inherit;
+    position: relative;
+    z-index: 100000;
+}
+
+.nav__sticky {
+    @extend .nav;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+.ul {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-16px;
+    list-style-type: none;
+    text-decoration-style: none;
+    margin: 1.5em 0em;
+    z-index: 100001;
+}
+
+.li {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-16px;
+    display: inline;
+    text-decoration-style: none;
+    padding: 1em 1.5em;
+
+}
+
+.img {
+    margin: 0.2em;
+}
+
+.link {
+    text-decoration: none;
+    color: #333;
+    &:visited {
+        color: #333;
+    }
+}
+
+.li:hover, .li:active {
+    color: $light-brown;
+    text-decoration: underline;
+}
+
+

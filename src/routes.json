@@ -1,0 +1,12 @@
+[
+  { "name": "HOME", "path": "/", "append": "" },
+  { "name": "VEGAN", "path": "/vegan", "append": "&health=vegan" },
+  { "name": "KETO", "path": "/keto", "append": "&health=keto" },
+  {
+    "name": "GLUTEN FREE",
+    "path": "/glutenFree",
+    "append": "&health=gluten-free"
+  },
+  { "name": "PALEO", "path": "/paleo", "append": "&health=paleo" },
+  { "name": "LOW CARB", "path": "/lowCarb", "append": "&diet=low-carb" }
+]

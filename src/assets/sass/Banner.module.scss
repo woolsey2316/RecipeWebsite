@@ -1,0 +1,334 @@
+.content, .h1, .p, .ul, 
+.li, footer, .major,
+.banner, .major {
+	margin: 0;
+	border: 0;
+	font: inherit;
+}
+
+.major {
+  display: block;
+  background-position: center -28.05px;
+  box-sizing: inherit;
+}
+
+.ol, .ul {
+	list-style: none;
+}
+
+.banner {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-image: url("../images/banner.jpg");
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 6em 0 2em 0 ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0 !important;
+  cursor: default;
+  height: 60vh;
+  margin-bottom: -3.25em;
+  max-height: 32em;
+  min-height: 22em;
+  position: relative;
+  top: -3.25em;
+}
+
+.majorHeader {
+  width: auto;
+  margin: 0em 0em 2em 0em;
+  font: inherit;
+  box-sizing: inherit;
+  display: block;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+.majorHeader:after {
+  content: '';
+  background-color: #ffffff;
+  display: block;
+  height: 2px;
+  margin: 0.325em 0 0.5em 0;
+  width: 100%;
+}
+
+  .banner:after {
+    -moz-transition: opacity 2.5s ease;
+    -webkit-transition: opacity 2.5s ease;
+    -ms-transition: opacity 2.5s ease;
+    transition: opacity 2.5s ease;
+    -moz-transition-delay: 0.75s;
+    -webkit-transition-delay: 0.75s;
+    -ms-transition-delay: 0.75s;
+    transition-delay: 0.75s;
+    pointer-events: none;
+    background-color: #242943;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .h1 {
+    width: auto;
+    font-size: 3.25em;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.65;
+    margin: 0;
+
+  }
+
+  .inner {
+    -moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+    -webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+    -ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+    transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+    z-index: 2;
+  }
+
+    .image {
+      display: none;
+    }
+
+    .header {
+      width: auto;
+    }
+
+      .header > :first-child {
+        width: auto;
+      }
+
+        .header > :first-child:after {
+          max-width: 100%;
+        }
+
+    .content {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      margin: 0 0 2em 0;
+
+    }
+
+      .content > * {
+        margin-right: 1.5em;
+        margin-bottom: 0;
+      }
+
+      .content > :last-child {
+        margin-right: 0;
+      }
+
+      .p {
+        font-size: 0.7em;
+        font-weight: 600;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin: 0 0 0 0;
+        margin-right: 1.5em;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        animation: fadeIn ease 3s;
+        -webkit-animation: fadeIn ease 3s;
+        -moz-animation: fadeIn ease 3s;
+        -o-animation: fadeIn ease 3s;
+        -ms-animation: fadeIn ease 3s;
+      }
+
+  .major {
+    height: 75vh;
+    min-height: 30em;
+    max-height: 50em;
+  }
+
+    .major.alt {
+      opacity: 0.75;
+    }
+
+  .banner.style1:after {
+    background-color: #6fc3df;
+  }
+
+  .banner.style2:after {
+    background-color: #8d82c4;
+  }
+
+  .banner.style3:after {
+    background-color: #ec8d81;
+  }
+
+  .banner.style4:after {
+    background-color: #e7b788;
+  }
+
+  .banner.style5:after {
+    background-color: #8ea9e8;
+  }
+
+  .banner.style6:after {
+    background-color: #87c5a4;
+  }
+
+  body.is-preload .banner:after {
+    opacity: 1.0;
+  }
+
+  body.is-preload .inner {
+    -moz-filter: blur(0.125em);
+    -webkit-filter: blur(0.125em);
+    -ms-filter: blur(0.125em);
+    filter: blur(0.125em);
+    -moz-transform: translateX(-0.5em);
+    -webkit-transform: translateX(-0.5em);
+    -ms-transform: translateX(-0.5em);
+    transform: translateX(-0.5em);
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 1280px) {
+
+    .banner {
+      background-attachment: scroll;
+    }
+
+  }
+
+  @media screen and (max-width: 736px) {
+
+    .banner {
+      padding: 5em 0 1em 0 ;
+      height: auto;
+      margin-bottom: -2.75em;
+      max-height: none;
+      min-height: 0;
+      top: -2.75em;
+    }
+
+      .h1 {
+        font-size: 2em;
+      }
+
+      .content {
+        display: block;
+      }
+
+        .p, .actions, .button {
+          margin-right: 0;
+          margin-bottom: 2em;
+        }
+
+      .major {
+        height: auto;
+        min-height: 0;
+        max-height: none;
+      }
+
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .banner {
+      padding: 6em 0 2em 0 ;
+    }
+
+      .inner .content p br {
+        display: none;
+      }
+
+      .major {
+        padding: 8em 0 4em 0 ;
+      }
+
+  }
+
+  .actions {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		cursor: default;
+    list-style: none;
+    margin: 0;
+		margin-left: -1em;
+    padding: 0;
+    font: inherit;
+	}
+
+		.li {
+			padding: 0 0 0 1em;
+			vertical-align: middle;
+		}
+      
+      

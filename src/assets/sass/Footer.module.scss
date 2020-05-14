@@ -1,0 +1,81 @@
+@import 'colours';
+@import 'fonts';
+
+$radius: .75em;
+$icon-size: $font-24px;
+
+.footer {
+  display: block;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  letter-spacing: 0.025em;
+
+}
+
+.inner {
+  padding: 3em 0em 1em 0em;
+  width: calc(100% - 3em);
+  margin: 0 auto;
+  max-width: 65em;
+  border: 0;
+  font: inherit;
+  box-sizing: inherit;
+  letter-spacing: 0.025em;
+}
+
+.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin: 0em 0em 2em 0em;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  box-sizing: inherit;
+  letter-spacing: 0.025em;
+}
+
+.li {
+  padding: 0 0.75em 0 0;
+  display: inline-block;
+  margin: 0 0.75em;
+  border: 0;
+  font: inherit;
+  text-align: center;
+  box-sizing: inherit;
+  letter-spacing: 0.025em;
+  padding: .4em;
+  height: $icon-size;
+  width: $icon-size;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.a {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+
+}
+
+.icon {
+  font-size: $icon-size;
+  color: $dark-blue;
+  text-align: center;
+
+}

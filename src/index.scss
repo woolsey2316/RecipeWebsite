@@ -1,28 +1,3 @@
-.mainNav {
-  background: rgb(21, 21, 180);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.links {
-  color: cornflowerblue;
-  border-radius: 4px;
-  &:focus,&:active,&:visited {
-    background: transparent;
-    color: white;
-}
-  &:hover {
-    background: rgb(21, 21, 180);
-    color: cornflowerblue;
-  }
-  &.active {
-    background: cornflowerblue;
-    color:white;
-    
-  }
-  
-}
-
-.heading {
-  color:white;
+html {
+  scroll-behavior: smooth;
 }

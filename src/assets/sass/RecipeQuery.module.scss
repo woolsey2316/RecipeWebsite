@@ -1,0 +1,52 @@
+@import 'fonts';
+.searchResults {
+  display: flex;
+}
+
+.searchForm {
+  min-height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: #b6956a;
+  border-radius: 10px;
+  border: 4px  #b6956a;
+  padding: 0.7em;
+}
+
+.input[type="text"] {
+  font-family: $normal-text;
+  letter-spacing: 0.025px;
+  color: black;
+  cursor: default;
+  display: inline-block;
+  line-height: 1em;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 5em;
+  padding: 0.5em 0.5em 0.5em 1.2em;
+  margin: 0 2em 0 0;
+  background: white;
+  border: none;
+  font-size: $font-18px;
+  &:hover {
+    cursor: text;
+  }
+}
+
+.button {
+  background-color: #b6956a;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: white;
+  width: calc(80% - 4px);
+}
