@@ -1,27 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ContactForm from "./ContactForm";
 import style from "../assets/sass/SideBar.module.scss";
 
 export default () => {
-  const handleScroll = () => {
+  let ref = useRef();
+  const scroll = () => {
     const position = window.pageYOffset;
+    console.log("event listener still here");
+
     if (position > 145) {
-      
-      document
-        .getElementById("SideBar")
-        .className=style.brand__magazineContainer__sticky;
+      ref.current.className = style.brand__magazineContainer__sticky;
     } else {
-      document
-        .getElementById("SideBar")
-        .className=style.brand__magazineContainer;
+      ref.current.className = style.brand__magazineContainer;
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", scroll, { passive: true });
+    console.log("new hook created");
+    return () => {
+      console.log("removed");
+      window.removeEventListener("scroll", scroll);
+    };
   });
+  console.log("render");
   return (
-    <div id="SideBar" className={style.brand__magazineContainer}>
+    <div ref={ref} className={style.brand__magazineContainer}>
       <img
         className={style.img}
         src={require("../assets/images/magazineCover.jpg")}

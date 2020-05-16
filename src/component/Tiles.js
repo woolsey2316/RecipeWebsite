@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 import Tile from "../Tile";
 import style from "../assets/sass/Tiles.module.scss";

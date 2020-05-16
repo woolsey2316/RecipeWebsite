@@ -12,6 +12,8 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
     -moz-align-items: -moz-center;
     -webkit-align-items: -webkit-center;
     -ms-align-items: -ms-center;
@@ -30,54 +32,56 @@
 }
 
 .nav__sticky {
-    @extend .nav;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
+  @extend .nav;
+  position: fixed;
+  //sends animation work over to GPU
+  will-change: transform;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: moveDown 0.5s ease-in-out;
+  -webkit-animation: moveDown 0.5s ease-in-out;
+  -moz-animation: moveDown 0.5s ease-in-out;
+  -o-animation: moveDown 0.5s ease-in-out;
+  -ms-animation: moveDown 0.5s ease-in-out;
 }
-@keyframes fadeIn {
-  0% {
-    opacity:0;
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
   }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
+  to {
+    transform: translateY(0rem);
   }
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
+@-moz-keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
   }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
+  to {
+    transform: translateY(0rem);
   }
 }
 
-@-ms-keyframes fadeIn {
+@-webkit-keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@-o-keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@-ms-keyframes moveDown {
   0% {
     opacity:0;
   }
