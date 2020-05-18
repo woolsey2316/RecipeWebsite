@@ -21,9 +21,6 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/about">
-              <About></About>
-            </Route>
             <Route exact path="/vegan">
               <Vegan healthLabel="&Health=vegan" />
             </Route>
