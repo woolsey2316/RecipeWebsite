@@ -8,9 +8,9 @@ const Tile = ({ title, description, url }) => {
       style={{ backgroundImage: "url(" + url + ")" }}
       src={style.article}
     >
-      <header className={`${style.major}`}>
-        <h3 className={`${style.h3}`}>
-          <a href={"/" + title.toLowerCase()} className={`${style.link}`}>
+      <header className={style.major}>
+        <h3 className={style.h3}>
+          <a href={"/" + title.toLowerCase()} className={style.link}>
             {title}
           </a>
         </h3>

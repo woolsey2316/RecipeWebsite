@@ -3,12 +3,14 @@ import { useLocation } from "react-router-dom";
 
 function useSticky() {
   const [isSticky, setSticky] = useState(false);
-  const element = useRef(null);
+  const [isWideScreen, setWideScreen] = useState(false);
+
   let location = useLocation();
   const position = location.pathname === "/" ? window.innerHeight : 145;
 
   const handleScroll = () => {
     window.scrollY > position ? setSticky(true) : setSticky(false);
+    window.scrollX > 1024 ? setWideScreen(true) : setWideScreen(false);
   };
 
   const debounce = (func, wait = 20, immediate = true) => {
@@ -33,7 +35,7 @@ function useSticky() {
     };
   }, [debounce, handleScroll]);
 
-  return { isSticky, element };
+  return { isSticky, isWideScreen };
 }
 
 export default useSticky;

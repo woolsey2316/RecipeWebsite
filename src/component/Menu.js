@@ -3,7 +3,7 @@ import style from "../assets/sass/Menu.module.scss";
 export default () => {
   return (
     <nav id="menu">
-      <ul className={`${style.links}`}>
+      <ul className={style.links}>
         <li>
           <a href="index.html">Home</a>
         </li>

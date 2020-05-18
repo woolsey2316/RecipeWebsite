@@ -9,8 +9,8 @@ library.add(fab);
 export default () => {
   return (
     <footer id="footer" className={style.footer}>
-      <div className={`${style.inner}`}>
-        <ul className={`${style.icons}`}>
+      <div className={style.inner}>
+        <ul className={style.icons}>
           <li className={style.li}>
             <a href="#" icon="icon brands alt">
               <FontAwesomeIcon

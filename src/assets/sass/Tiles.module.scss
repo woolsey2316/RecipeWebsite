@@ -1,159 +1,115 @@
-  .tiles {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    border: 0;
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+.tiles {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.article {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: flex-end;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+  -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+  -ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+  padding: 4em 4em 2em 4em ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+  height: 40vh;
+  max-height: 40em;
+  min-height: 23em;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+}
+
+.image {
+  display: none;
+}
+
+.header {
+  position: relative;
+  z-index: 3;
+}
+
+.h3 {
+  font-size: 1.75em;
+}
+
+  .a:hover {
+    color: inherit !important;
   }
 
-  .article {
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: flex-end;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
-    -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
-    -ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
-    transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
-    padding: 4em 4em 2em 4em ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: default;
-    height: 40vh;
-    max-height: 40em;
-    min-height: 23em;
-    overflow: hidden;
-    position: relative;
-    width: 40%;
-  }
+.link.primary {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
 
-    .image {
-      display: none;
-    }
+.article:before {
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
 
-    .header {
-      position: relative;
-      z-index: 3;
-    }
+.article:after {
+  background-color: rgba(36, 41, 67, 0.25);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
-    .h3 {
-      font-size: 1.75em;
-    }
+.article:hover:before {
+  opacity: 0;
+}
 
-      .a:hover {
-        color: inherit !important;
-      }
+.article.is-transitioning {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  -moz-filter: blur(0.5em);
+  -webkit-filter: blur(0.5em);
+  -ms-filter: blur(0.5em);
+  filter: blur(0.5em);
+  opacity: 0;
+}
 
-    .link.primary {
-      border: 0;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 4;
-    }
-
-    .article:before {
-      -moz-transition: opacity 0.5s ease;
-      -webkit-transition: opacity 0.5s ease;
-      -ms-transition: opacity 0.5s ease;
-      transition: opacity 0.5s ease;
-      bottom: 0;
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      opacity: 0.85;
-      position: absolute;
-      width: 100%;
-      z-index: 2;
-    }
-
-    .article:after {
-      background-color: rgba(36, 41, 67, 0.25);
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
-
-    .article:hover:before {
-      opacity: 0;
-    }
-
-    .article.is-transitioning {
-      -moz-transform: scale(0.95);
-      -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-      transform: scale(0.95);
-      -moz-filter: blur(0.5em);
-      -webkit-filter: blur(0.5em);
-      -ms-filter: blur(0.5em);
-      filter: blur(0.5em);
-      opacity: 0;
-    }
-
-    
-
-  @media screen and (max-width: 1280px) {
-
-    .article {
-      padding: 4em 3em 2em 3em ;
-      height: 30vh;
-      max-height: 30em;
-      min-height: 20em;
-    }
-
-  }
-
-  @media screen and (max-width: 980px) {
-
-    .article {
-      width: 50% !important;
-    }
-
-  }
-
-  @media screen and (max-width: 736px) {
-
-    .article {
-      padding: 3em 1.5em 1em 1.5em ;
-      height: 16em;
-      max-height: none;
-      min-height: 0;
-    }
-
-      .h3 {
-        font-size: 1.5em;
-      }
-
-  }
-
-  @media screen and (max-width: 480px) {
-
-    .tiles {
-      display: block;
-    }
-
-      .article {
-        height: 20em;
-        width: 100% !important;
-      }
-
-  }

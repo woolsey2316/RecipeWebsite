@@ -9,11 +9,11 @@ const About = () => {
   return (
     <layout>
       <Menu />
-      <div id="main" className={`${style.alt}`}>
+      <div id="main" className={style.alt}>
         <SideBar />
         <section id="one">
-          <div className={`${style.inner}`}>
-            <header className={`${style.major}`}>
+          <div className={style.inner}>
+            <header className={style.major}>
               <h1>Generic</h1>
             </header>
             <span className={`${style.image} ${style.main}`}>

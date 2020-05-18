@@ -1,4 +1,7 @@
-@import 'fonts';
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
 .searchResults {
   display: flex;
 }
@@ -24,11 +27,11 @@
   text-align: left;
   text-decoration: none;
   border-radius: 5em;
-  padding: 0.5em 0.5em 0.5em 1.2em;
+  padding: 0.5em 0.5em 0.5em 2.5em;
   margin: 0 2em 0 0;
-  background: white;
   border: none;
   font-size: $font-18px;
+  background: left 55% / 20% 50% url(../images/search.svg) no-repeat scroll white;
   &:hover {
     cursor: text;
   }
@@ -48,5 +51,38 @@
   flex-wrap: wrap;
   align-items: flex-start;
   background: white;
-  width: calc(80% - 4px);
 }
+
+@media #{$mq-xxxsmall} {
+  .searchForm {
+    justify-content: center;
+  } 
+  .input[type="text"] {
+    margin: 0;
+  }
+}
+@media #{$mq-xxsmall} {
+  
+}
+@media #{$mq-small} {
+
+}
+@media #{$mq-medium} {
+  .recipes {
+    width: calc(100% - 275px);
+  }
+  
+}
+@media #{$mq-large} {
+  .recpies {
+    width: calc(80% - 4px);
+  }
+
+}
+@media #{$mq-xlarge} {
+  
+}
+@media #{$mq-xxlarge} {
+
+}
+

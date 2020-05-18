@@ -5,8 +5,8 @@ import buttonStyle from "../assets/sass/Button.module.scss";
 const Overview = () => {
   return (
     <section className={style.section} id="two">
-      <div className={`${style.inner}`}>
-        <header className={`${style.major}`}>
+      <div className={style.inner}>
+        <header className={style.major}>
           <h2 className={style.h2}>Purpose</h2>
         </header>
         <p className={style.p}>
@@ -25,8 +25,8 @@ const Overview = () => {
           recent times. These aren’t always due to a food intolerance or
           allergy, but can restrict a similar if not greater range of foods.
         </p>
-        <ul className={`${style.actions}`}>
-          <li className={`${style.li}`}>
+        <ul className={style.actions}>
+          <li className={style.li}>
             <a
               href="#one"
               className={`${buttonStyle.transparentButton} ${buttonStyle.next}`}

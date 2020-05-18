@@ -1,5 +1,8 @@
-@import 'fonts';
-@import 'colours';
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+$sidebar-width: 275px;
 
 .img {
   max-height: 295px;
@@ -7,38 +10,6 @@
   transition: opacity 175ms;
   display: inline-block;
   height: auto;
-}
-
-.brand__magazineContainer {
-  width: 275px;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0em 1em;
-  position: relative;
-  top: 0px;
-  right: 0;
-  float: right;
-
-}
-
-.brand__magazineContainer__sticky {
-  width: 275px;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0em 1em;
-  position: fixed;
-  top: 4.2em;
-  right: 0;
-  float: right;
-  transition: all 0.5s;
 }
 
 .subscribeButton {
@@ -74,4 +45,61 @@
   font-size: 15px;
   line-height: 28px;
   margin: 0.1em 0em;
+}
+
+@media #{$mq-xxxsmall} {
+  .brand__magazineContainer, .brand__magazineContainer__sticky {
+    display: none;
+  }
+}
+@media #{$mq-xxsmall} {
+  
+}
+@media #{$mq-small} {
+
+}
+@media #{$mq-medium} {
+  .brand__magazineContainer {
+    width: $sidebar-width;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0em 1em;
+    position: relative;
+    top: 0px;
+    right: 0;
+    float: right;
+    transition: all 0.5s; 
+  }
+  .brand__magazineContainer__sticky {
+    width: $sidebar-width;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0em 1em;
+    position: fixed;
+    top: 4.2em;
+    right: 0;
+    float: right;
+    transition: all 0.5s;
+  }
+  
+}
+@media #{$mq-large} {
+  .recpies {
+    width: calc(80% - 4px);
+  }
+
+}
+@media #{$mq-xlarge} {
+  
+}
+@media #{$mq-xxlarge} {
+
 }

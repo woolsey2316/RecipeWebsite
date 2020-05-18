@@ -1,220 +1,118 @@
-@import 'colours';
+@import "colours";
+@import "fonts";
+@import "media-queries";
 
-.header {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  background-color: #2a2f4a;
-  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
-  cursor: default;
-  font-weight: 600;
-  height: 3.25em;
-  left: 0;
-  letter-spacing: 0.25em;
-  line-height: 3.25em;
-  margin: 0;
-  position: fixed;
-  text-transform: uppercase;
-  top: 0;
-  width: 100%;
-  vertical-align: middle;
-  z-index: 10000;
+.header.alt.style1 strong {
+  color: #6fc3df;
 }
 
-.logo {
-  display: inline-block;
-  font-size: 1em;
-  height: inherit;
-  line-height: inherit;
-  padding: 0 1.5em;
-  position: relative;
-  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  color: inherit;
-  text-decoration: none;
-  border: 0;
-  margin: 0;
-  justify-self: flex-start;
+.header.alt.style2 strong {
+  color: #8d82c4;
+}
+
+.header.alt.style3 strong {
+  color: #ec8d81;
+}
+
+.header.alt.style4 strong {
+  color: #e7b788;
+}
+
+.header.alt.style5 strong {
+  color: #8ea9e8;
+}
+
+.header.alt.style6 strong {
+  color: #87c5a4;
+}
+
+body.is-preload .header.alt {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1680px) {
+
+  .a[href="#menu"] {
+    padding-right: 3.75em !important;
+  }
+
+    .a[href="#menu"]:last-child {
+      padding-right: 4.25em !important;
+    }
 
 }
 
-.logo:last-child {
-  padding-right: 1.5em;
+@media screen and (max-width: 1280px) {
+
+  .a[href="#menu"] {
+    padding-right: 4em !important;
+  }
+
+    .a[href="#menu"]:last-child {
+      padding-right: 4.5em !important;
+    }
+
 }
 
-.span {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  transition: color 0.2s ease-in-out;
-}
+@media screen and (max-width: 736px) {
 
-  .strong {
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    background-color: $light-brown;
-    color: white;
-    display: inline-block;
-    line-height: 1.65em;
-    margin: 0em 0.325em 0em 0em;
-    padding: .3em 0.125em 0.3em 0.375em;
-    border: 0;
-    font: inherit;
-    font-weight: 600;
-    vertical-align: baseline;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
+  .header {
+    height: 2.75em;
+    line-height: 2.75em;
   }
 
-  
-
-  .strong:active {
-    background-color: #53e3fb;
-  }
-
-  .reveal {
-    -moz-animation: reveal-header 0.35s ease;
-    -webkit-animation: reveal-header 0.35s ease;
-    -ms-animation: reveal-header 0.35s ease;
-    animation: reveal-header 0.35s ease;
-  }
-
-  .alt {
-    -moz-transition: opacity 2.5s ease;
-    -webkit-transition: opacity 2.5s ease;
-    -ms-transition: opacity 2.5s ease;
-    transition: opacity 2.5s ease;
-    -moz-transition-delay: 0.75s;
-    -webkit-transition-delay: 0.75s;
-    -ms-transition-delay: 0.75s;
-    transition-delay: 0.75s;
-    -moz-animation: none;
-    -webkit-animation: none;
-    -ms-animation: none;
-    animation: none;
-    background-color: transparent;
-    box-shadow: none;
-    position: absolute;
-  }
-
-    .header.alt.style1 strong {
-      color: #6fc3df;
+    .logo {
+      padding: 0 1em;
     }
 
-    .header.alt.style2 strong {
-      color: #8d82c4;
+    .a {
+      padding: 0 0.5em;
     }
 
-    .header.alt.style3 strong {
-      color: #ec8d81;
-    }
-
-    .header.alt.style4 strong {
-      color: #e7b788;
-    }
-
-    .header.alt.style5 strong {
-      color: #8ea9e8;
-    }
-
-    .header.alt.style6 strong {
-      color: #87c5a4;
-    }
-
-  body.is-preload .header.alt {
-    opacity: 0;
-  }
-
-  @media screen and (max-width: 1680px) {
-
-    .a[href="#menu"] {
-      padding-right: 3.75em !important;
-    }
-
-      .a[href="#menu"]:last-child {
-        padding-right: 4.25em !important;
+      .a:last-child {
+        padding-right: 1em;
       }
 
-  }
-
-  @media screen and (max-width: 1280px) {
-
-    .a[href="#menu"] {
-      padding-right: 4em !important;
-    }
-
-      .a[href="#menu"]:last-child {
-        padding-right: 4.5em !important;
+      .a[href="#menu"] {
+        padding-right: 3.25em !important;
       }
 
-  }
-
-  @media screen and (max-width: 736px) {
-
-    .header {
-      height: 2.75em;
-      line-height: 2.75em;
-    }
-
-      .logo {
-        padding: 0 1em;
-      }
-
-      .a {
-        padding: 0 0.5em;
-      }
-
-        .a:last-child {
-          padding-right: 1em;
+        .a[href="#menu"]:before, .a[href="#menu"]:after {
+          right: 0.75em;
         }
 
-        .a[href="#menu"] {
-          padding-right: 3.25em !important;
+        .a[href="#menu"]:last-child {
+          padding-right: 4em !important;
         }
 
-          .a[href="#menu"]:before, .a[href="#menu"]:after {
-            right: 0.75em;
+          .a[href="#menu"]:last-child:before, .a[href="#menu"]:last-child:after {
+            right: 1.5em;
           }
 
-          .a[href="#menu"]:last-child {
-            padding-right: 4em !important;
-          }
+}
 
-            .a[href="#menu"]:last-child:before, .a[href="#menu"]:last-child:after {
-              right: 1.5em;
-            }
+@media screen and (max-width: 480px) {
 
+  .span {
+    display: none;
   }
 
-  @media screen and (max-width: 480px) {
-
-    .span {
-      display: none;
-    }
-
-    .a[href="#menu"] {
-      overflow: hidden;
-      padding-right: 0 !important;
-      text-indent: 5em;
-      white-space: nowrap;
-      width: 5em;
-    }
-
-      .a[href="#menu"]:before, .a[href="#menu"]:after {
-        right: 0;
-        width: inherit;
-      }
-
-      .a[href="#menu"]:last-child:before, .a[href="#menu"]:last-child:after {
-        width: 4em;
-        right: 0;
-      }
-
+  .a[href="#menu"] {
+    overflow: hidden;
+    padding-right: 0 !important;
+    text-indent: 5em;
+    white-space: nowrap;
+    width: 5em;
   }
+
+    .a[href="#menu"]:before, .a[href="#menu"]:after {
+      right: 0;
+      width: inherit;
+    }
+
+    .a[href="#menu"]:last-child:before, .a[href="#menu"]:last-child:after {
+      width: 4em;
+      right: 0;
+    }
+
+}

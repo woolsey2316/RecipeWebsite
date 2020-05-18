@@ -4,13 +4,13 @@ import SideBar from "../container/SideBar";
 import SearchResultTitle from "../component/SearchResultTitle";
 import style from "../assets/sass/RecipeQuery.module.scss";
 
-function RecipeQuery(props) {
+function RecipeQuery({ append, searchTerm }) {
   const APP_ID = "bde76692";
   const APP_KEY = "a779c707df0015efad7cf8cee3391fe1";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("chocolate");
+  const [query, setQuery] = useState(searchTerm);
 
   function handleErrors(response) {
     if (!response.ok) {
@@ -21,7 +21,7 @@ function RecipeQuery(props) {
   useEffect(() => {
     async function getRecipes() {
       fetch(
-        `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}${props.append}`
+        `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}${append}`
       )
         .then(handleErrors)
         .then(async function(response) {
@@ -34,7 +34,7 @@ function RecipeQuery(props) {
         });
     }
     getRecipes();
-  }, [props, query]);
+  }, [append, query]);
 
   const updateSearch = e => {
     setSearch(e.target.value);
@@ -60,7 +60,7 @@ function RecipeQuery(props) {
         />
       </form>
       <div className={style.searchResults}>
-        <div className={`${style.recipes}`}>
+        <div className={style.recipes}>
           {query ? <SearchResultTitle searchTerm={query} /> : null}
           {recipes.map(recipe => (
             <Recipe

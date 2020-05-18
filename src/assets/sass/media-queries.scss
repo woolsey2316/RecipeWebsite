@@ -1,6 +1,9 @@
 @import 'breakpoints';
 
 // Media Queries
+$mq-xxxsmall: "(min-width: #{$bp-xxxsmall})";
+$mq-xxsmall: "(min-width: #{$bp-xxsmall})";
+$mq-xsmall: "(min-width: #{$bp-xsmall})";
 $mq-small: "(min-width: #{$bp-small})";
 $mq-medium: "(min-width: #{$bp-medium})";
 $mq-large: "(min-width: #{$bp-large})";

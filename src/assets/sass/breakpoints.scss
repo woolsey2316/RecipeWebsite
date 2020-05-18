@@ -1,9 +1,9 @@
 // Breakpoints
-$bp-xxxsmall: 22.5em; // 360px
-$bp-xxsmall: 23.4375em; // 375px
-$bp-xsmall: 25.875em; // 414px
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
+$bp-xxxsmall: 22.5em;   // 360px - android galaxy
+$bp-xxsmall:  23.4375em;// 375px - iphone ios 11, iphone x
+$bp-xsmall:   25.875em; // 414px - iphone plus
+$bp-small:    48em;     // 768px - ipad
+$bp-medium:   64em;     // 1024px - Dad's laptop
+$bp-large:    85.375em; // 1366px - my laptop
+$bp-xlarge:   120em;    // 1920px
+$bp-xxlarge:  160em;    // 2560px

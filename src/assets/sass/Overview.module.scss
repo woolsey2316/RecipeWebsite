@@ -1,3 +1,7 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
 .section {
 	margin: 0;
 	padding: 0;
@@ -28,9 +32,8 @@
 
 .inner {
   padding: 4em 0 2em 0 ;
-  margin: 0 5em;
+  margin: 0 15%;
   max-width: 65em;
-	width: calc(100% - 6em);
 	border: 0;
 	font: inherit;
 	box-sizing: inherit;
@@ -51,16 +54,14 @@
 	letter-spacing: 0.025em;
 }
 
-	.h2:after {
-		content: '';
-		background-color: #ffffff;
-		display: block;
-		height: 2px;
-		margin: 0.325em 0 0.5em 0;
-		width: 100%;
-	}
-
-
+.h2:after {
+	content: '';
+	background-color: #ffffff;
+	display: block;
+	height: 2px;
+	margin: 0.325em 0 0.5em 0;
+	width: 100%;
+}
 
 .p {
 	margin: 0em 0em 2em 0em;
@@ -97,7 +98,6 @@
 
     .inner {
       padding: 3em 0 1em 0 ;
-      width: calc(100% - 3em);
     }
 
   }

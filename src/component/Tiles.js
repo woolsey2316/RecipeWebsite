@@ -12,7 +12,7 @@ const imagePath6 = "./images/low-carb.jpg";
 
 export default props => {
   return (
-    <section id="one" className={`${style.tiles}`}>
+    <section id="one" className={style.tiles}>
       <Tile
         ref={props.callBackRef}
         title="Vegan"

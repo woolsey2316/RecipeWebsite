@@ -4,10 +4,10 @@ import style from "../assets/sass/Contact.module.scss";
 const Contact = () => {
   return (
     <section id="contact">
-      <div className={`${style.inner}`}>
+      <div className={style.inner}>
         <section>
           <form method="post" action="#">
-            <div className={`${style.fields}`}>
+            <div className={style.fields}>
               <div className={`${style.field} ${style.half}`}>
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" />
@@ -16,17 +16,17 @@ const Contact = () => {
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email" />
               </div>
-              <div className={`${style.field}`}>
+              <div className={style.field}>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="6"></textarea>
               </div>
             </div>
-            <ul className={`${style.actions}`}>
+            <ul className={style.actions}>
               <li>
                 <input
                   type="submit"
                   value="Send Message"
-                  className={`${style.primary}`}
+                  className={style.primary}
                 />
               </li>
               <li>
@@ -35,9 +35,9 @@ const Contact = () => {
             </ul>
           </form>
         </section>
-        <section className={`${style.split}`}>
+        <section className={style.split}>
           <section>
-            <div className={`${style.contactMethod}`}>
+            <div className={style.contactMethod}>
               <span
                 className={`${style.icon} ${style.solid} ${style.alt} ${style.faEnvelope}`}
               ></span>
@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
           </section>
           <section>
-            <div className={`${style.contactMethod}`}>
+            <div className={style.contactMethod}>
               <span
                 className={`${style.icon} ${style.solid} ${style.alt} ${style.faPhone}`}
               ></span>
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
           </section>
           <section>
-            <div className={`${style.contactMethod}`}>
+            <div className={style.contactMethod}>
               <span
                 className={`${style.icon} ${style.solid} ${style.alt} ${style.faHome}`}
               ></span>

@@ -8,13 +8,13 @@ import style from "../assets/sass/Home.module.scss";
 
 export const Home = () => {
   return (
-    <div id="wrapper" className={`${style.wrapper}`}>
+    <div id="wrapper" className={style.wrapper}>
       <Banner />
       <Tiles />
       <Overview />
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;

@@ -12,20 +12,20 @@ import LowCarb from "./pages/About";
 import style from "./assets/sass/App.module.scss";
 import "./index.scss";
 
-const Home = lazy(() => import('./pages/Home'));
+const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
     <Router>
-      <div className={`${style.App}`}>
+      <div className={style.App}>
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Home} />
             <Route exact path="/about">
               <About></About>
             </Route>
             <Route exact path="/vegan">
-              <Vegan healthLabel="&Health=vegan"/>
+              <Vegan healthLabel="&Health=vegan" />
             </Route>
             <Route exact path="/keto">
               <Keto healthLabel="&Health=keto-friendly" />
