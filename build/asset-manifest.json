@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ba5cbb9.chunk.css",
-    "main.js": "/static/js/main.8f9c82b4.chunk.js",
-    "main.js.map": "/static/js/main.8f9c82b4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a9737f3e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a9737f3e.js.map",
-    "static/js/2.3fdee9ab.chunk.js": "/static/js/2.3fdee9ab.chunk.js",
-    "static/js/2.3fdee9ab.chunk.js.map": "/static/js/2.3fdee9ab.chunk.js.map",
+    "main.css": "/static/css/main.c31ee95c.chunk.css",
+    "main.js": "/static/js/main.2ebf7fea.chunk.js",
+    "main.js.map": "/static/js/main.2ebf7fea.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2458b55b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2458b55b.js.map",
+    "static/js/2.6ccd605d.chunk.js": "/static/js/2.6ccd605d.chunk.js",
+    "static/js/2.6ccd605d.chunk.js.map": "/static/js/2.6ccd605d.chunk.js.map",
+    "static/css/3.29cf6824.chunk.css": "/static/css/3.29cf6824.chunk.css",
+    "static/js/3.b550e91b.chunk.js": "/static/js/3.b550e91b.chunk.js",
+    "static/js/3.b550e91b.chunk.js.map": "/static/js/3.b550e91b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.313af6227aa78316bb2fb6abd819af36.js": "/precache-manifest.313af6227aa78316bb2fb6abd819af36.js",
+    "precache-manifest.65b514e4dfb5c0a7fe879a3cc22cf7ef.js": "/precache-manifest.65b514e4dfb5c0a7fe879a3cc22cf7ef.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9ba5cbb9.chunk.css.map": "/static/css/main.9ba5cbb9.chunk.css.map",
-    "static/media/main.css": "/static/media/fa-solid-900.ef3df984.eot",
-    "static/media/recipequery.module.css": "/static/media/search.c4ec0e67.svg"
+    "static/css/3.29cf6824.chunk.css.map": "/static/css/3.29cf6824.chunk.css.map",
+    "static/css/main.c31ee95c.chunk.css.map": "/static/css/main.c31ee95c.chunk.css.map",
+    "static/media/Banner.module.scss": "/static/media/banner.1c2d13d3.jpg",
+    "static/media/fontawesome-all.min.css": "/static/media/fa-solid-900.ef3df984.eot",
+    "static/media/magazineCover.jpg": "/static/media/magazineCover.41660641.jpg",
+    "static/media/RecipeQuery.module.scss": "/static/media/search.c4ec0e67.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9737f3e.js",
-    "static/js/2.3fdee9ab.chunk.js",
-    "static/css/main.9ba5cbb9.chunk.css",
-    "static/js/main.8f9c82b4.chunk.js"
+    "static/js/runtime-main.2458b55b.js",
+    "static/js/2.6ccd605d.chunk.js",
+    "static/css/main.c31ee95c.chunk.css",
+    "static/js/main.2ebf7fea.chunk.js"
   ]
 }
