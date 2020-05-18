@@ -2,12 +2,11 @@ import React, { Suspense, lazy } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import About from "./pages/About";
 import Vegan from "./pages/Vegan";
 import Keto from "./pages/Keto";
 import GlutenFree from "./pages/GlutenFree";
 import Paleo from "./pages/Paleo";
-import LowCarb from "./pages/About";
+import LowCarb from "./pages/LowCarb";
 
 import style from "./assets/sass/App.module.scss";
 import "./index.scss";
