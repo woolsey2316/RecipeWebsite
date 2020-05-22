@@ -3,6 +3,7 @@
 @import "media-queries";
 
 .section {
+	background: #242943;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -100,4 +101,8 @@
       padding: 3em 0 1em 0 ;
     }
 
-  }
+	}
+	
+	.icon {
+		color:white;
+	}

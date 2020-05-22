@@ -99,8 +99,11 @@
   width: 40%;
   box-sizing: border-box;
   &:hover {
-    .p, .h3 {
-      text-shadow: 1px 1px 4px black, -1px -1px 4px black;
+    .p {
+      text-shadow: 1px 1px 4px rgb(32, 32, 32), -1px -1px 4px rgb(22, 22, 22);
+    }
+    .h3 {
+      text-shadow: 1px 1px 10px rgb(94, 92, 92);
     }
   }
 }

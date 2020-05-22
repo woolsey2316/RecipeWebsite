@@ -3,6 +3,10 @@ import style from "../assets/sass/Banner.module.scss";
 import buttonStyle from "../assets/sass/Button.module.scss";
 import Navigation from "../container/Navigation";
 import NavStyle from "../assets/sass/Navigation.module.scss";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
 
 const Banner = ({ scroll }) => {
   return (
@@ -24,7 +28,12 @@ const Banner = ({ scroll }) => {
                 className={`${buttonStyle.transparentButton} ${buttonStyle.next}`}
                 onClick={scroll}
               >
-                Get Started
+                Get Started&#160;&#160;  
+                <FontAwesomeIcon
+                className={style.icon}
+                icon={"arrow-right"}
+              
+              />
               </a>
             </li>
           </ul>

@@ -39,12 +39,15 @@ $sidebar-width: 275px;
   text-align: left;
   box-sizing: border-box;
   margin: 0.3em 0em;
+  color: $grey;
+
 }
 
 .h3 {
   font-size: 15px;
   line-height: 28px;
   margin: 0.1em 0em;
+  color: $grey;
 }
 
 @media #{$mq-xxxsmall} {
@@ -59,34 +62,26 @@ $sidebar-width: 275px;
 
 }
 @media #{$mq-medium} {
-  .brand__magazineContainer {
+  .outer {
     width: $sidebar-width;
+    background: #efeff1;
     text-align: center;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0em 1em;
+    padding: 1em 1em;
     position: relative;
     top: 0px;
     right: 0;
     float: right;
     transition: all 0.5s; 
   }
-  .brand__magazineContainer__sticky {
-    width: $sidebar-width;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0em 1em;
+  .outer__sticky {
+    @extend .outer;
     position: fixed;
-    top: 4.2em;
-    right: 0;
-    float: right;
+    top: 3.2em;
     transition: all 0.5s;
   }
   

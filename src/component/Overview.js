@@ -1,6 +1,10 @@
 import React from "react";
 import style from "../assets/sass/Overview.module.scss";
 import buttonStyle from "../assets/sass/Button.module.scss";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
 
 const Overview = () => {
   return (
@@ -30,8 +34,12 @@ const Overview = () => {
             <a
               href="#one"
               className={`${buttonStyle.transparentButton} ${buttonStyle.next}`}
-            >
-              Get Started
+            > Get Started &#160;&#160;  
+              <FontAwesomeIcon
+              className={style.icon}
+              icon={"arrow-right"}
+            
+            />
             </a>
           </li>
         </ul>

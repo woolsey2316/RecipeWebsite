@@ -9,9 +9,9 @@ export default () => {
     console.log("event listener still here");
 
     if (position > 145) {
-      ref.current.className = style.brand__magazineContainer__sticky;
+      ref.current.className = style.outer__sticky;
     } else {
-      ref.current.className = style.brand__magazineContainer;
+      ref.current.className = style.outer;
     }
   };
 
@@ -25,7 +25,7 @@ export default () => {
   });
   console.log("render");
   return (
-    <div ref={ref} className={style.brand__magazineContainer}>
+    <div ref={ref} className={style.outer}>
       <img
         className={style.img}
         src={require("../assets/images/magazineCover.jpg")}

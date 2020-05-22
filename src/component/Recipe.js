@@ -7,7 +7,7 @@ const Recipe = ({ title, calories, image, ingredients, url }) => {
     return null;
   }
   return (
-    <div className={style.recipe}>
+    <div className={style.outer}>
       <a className={style.a} href={url}>
         <img className={style.image} src={image} alt="" />
       </a>
