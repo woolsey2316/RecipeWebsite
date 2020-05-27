@@ -3,6 +3,9 @@
 }
 
 .navigation {
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   align-items:center;
@@ -12,6 +15,9 @@
 
 .nav-links {
   width: 50%;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,7 +29,11 @@
 }
 
 .recipes {
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }

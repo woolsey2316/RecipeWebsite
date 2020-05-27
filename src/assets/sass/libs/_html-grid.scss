@@ -40,8 +40,12 @@
 				}
 
 		// Row.
-			display: flex;
-			flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+			-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 			box-sizing: border-box;
 			align-items: stretch;
 

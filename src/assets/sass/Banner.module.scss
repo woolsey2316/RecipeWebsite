@@ -26,10 +26,14 @@
   -ms-align-items: center;
   align-items: center;
   background-image: url("../images/banner.jpg");
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 6em 0 2em 0 ;
   background-attachment: fixed;
@@ -216,10 +220,14 @@
 }
 
 .content {
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -moz-align-items: center;
   -webkit-align-items: center;
@@ -296,9 +304,12 @@ body.is-preload .inner {
 }
 
 .actions {
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   cursor: default;
   list-style: none;

@@ -3,13 +3,20 @@
 @import "media-queries";
 
 .tiles {
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -moz-flex-wrap: wrap;
+  -moz--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -21,9 +28,12 @@
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: flex-end;
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
   -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;

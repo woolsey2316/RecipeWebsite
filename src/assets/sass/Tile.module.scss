@@ -3,9 +3,9 @@
 @import "media-queries";
 
 .tiles {
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -77,10 +77,11 @@
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
+  -webkit-align-items: center;
   align-items: center;
-  display: -moz-flex;
+
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
   -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
   -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;

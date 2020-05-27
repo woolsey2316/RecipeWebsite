@@ -293,8 +293,12 @@ input, select, textarea {
 /* Row */
 
 	.row {
-		display: flex;
-		flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+		-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
@@ -536,8 +540,12 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.row {
-				display: flex;
-				flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+				-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -781,8 +789,12 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.row {
-				display: flex;
-				flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+				-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -1026,8 +1038,12 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.row {
-				display: flex;
-				flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+				-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -1271,8 +1287,12 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.row {
-				display: flex;
-				flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+				-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -1516,8 +1536,12 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.row {
-				display: flex;
-				flex-wrap: wrap;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+				-webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -1821,14 +1845,21 @@ input, select, textarea {
 		}
 
 		form > .fields {
-			display: -moz-flex;
+
 			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-wrap: wrap;
+			display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+			-moz--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+			-webkit--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+			-ms--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
+  flex-wrap: wrap;
 			width: calc(100% + 3em);
 			margin: -1.5em 0 2em -1.5em;
 		}
@@ -2267,10 +2298,13 @@ input, select, textarea {
 /* Actions */
 
 	ul.actions {
-		display: -moz-flex;
+
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -2708,14 +2742,21 @@ input, select, textarea {
 /* Tiles */
 
 	.tiles {
-		display: -moz-flex;
+
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
+		display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+		-moz--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+		-webkit--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+		-ms--webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+  flex-wrap: wrap;
 		border-top: 0 !important;
 	}
 
@@ -2728,10 +2769,13 @@ input, select, textarea {
 			-webkit-align-items: center;
 			-ms-align-items: center;
 			align-items: flex-end;
-			display: -moz-flex;
+
 			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
+			display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
 			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
 			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
@@ -2924,10 +2968,13 @@ input, select, textarea {
 		}
 
 		.spotlights > section {
-			display: -moz-flex;
+
 			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
+			display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 			-moz-flex-direction: row;
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
@@ -2963,10 +3010,13 @@ input, select, textarea {
 				}
 
 			.spotlights > section > .content {
-				display: -moz-flex;
+
 				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
+				display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -3104,10 +3154,13 @@ input, select, textarea {
 	}
 
 	#header {
-		display: -moz-flex;
+
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 		background-color: #2a2f4a;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
@@ -3155,10 +3208,13 @@ input, select, textarea {
 			}
 
 		#header nav {
-			display: -moz-flex;
+
 			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
+			display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 			-moz-justify-content: -moz-flex-end;
 			-webkit-justify-content: -webkit-flex-end;
 			-ms-justify-content: -ms-flex-end;
@@ -3373,10 +3429,13 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		background-image: url("/images/banner.jpg");
-		display: -moz-flex;
+
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
 		background-position: center;
@@ -3445,10 +3504,13 @@ input, select, textarea {
 					}
 
 			#banner > .inner .content {
-				display: -moz-flex;
+
 				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
+				display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
@@ -3621,10 +3683,13 @@ input, select, textarea {
 	}
 
 		#contact > .inner {
-			display: -moz-flex;
+
 			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
+			display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 			padding: 0 !important;
 		}
 
@@ -3781,10 +3846,13 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		display: -moz-flex;
+
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
