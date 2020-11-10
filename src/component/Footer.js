@@ -12,7 +12,7 @@ export default () => {
       <div className={style.inner}>
         <ul className={style.icons}>
           <li className={style.li}>
-            <a href="#" icon="icon brands alt">
+            <a href="twitter.com" icon="icon brands alt">
               <FontAwesomeIcon
                 className={style.icon}
                 icon={["fab", "twitter"]}
@@ -20,7 +20,7 @@ export default () => {
             </a>
           </li>
           <li className={style.li}>
-            <a href="#" icon="icon brands alt">
+            <a href="twitter.com" icon="icon brands alt">
               <FontAwesomeIcon
                 className={style.icon}
                 icon={["fab", "facebook-f"]}
@@ -28,7 +28,7 @@ export default () => {
             </a>
           </li>
           <li className={style.li}>
-            <a href="#" icon="icon brands alt">
+            <a href="twitter.com" icon="icon brands alt">
               <FontAwesomeIcon
                 className={style.icon}
                 icon={["fab", "instagram"]}
@@ -36,7 +36,7 @@ export default () => {
             </a>
           </li>
           <li className={style.li}>
-            <a href="#" icon="icon brands alt">
+            <a href="twitter.com" icon="icon brands alt">
               <FontAwesomeIcon
                 className={style.icon}
                 icon={["fab", "github"]}
@@ -44,7 +44,7 @@ export default () => {
             </a>
           </li>
           <li className={style.li}>
-            <a href="#" icon="icon brands alt">
+            <a href="twitter.com" icon="icon brands alt">
               <FontAwesomeIcon
                 className={style.icon}
                 icon={["fab", "linkedin-in"]}

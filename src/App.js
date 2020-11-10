@@ -7,6 +7,7 @@ import Keto from "./pages/Keto";
 import GlutenFree from "./pages/GlutenFree";
 import Paleo from "./pages/Paleo";
 import LowCarb from "./pages/LowCarb";
+import SugarConscious from './pages/SugarConscious'
 
 import style from "./assets/sass/App.module.scss";
 import "./index.scss";
@@ -23,16 +24,19 @@ const App = () => {
             <Route exact path="/vegan">
               <Vegan healthLabel="&Health=vegan" />
             </Route>
+            <Route exact path="/sugar-conscious">
+              <SugarConscious healthLabel="&Health=low-sugar" />
+            </Route>
             <Route exact path="/keto">
               <Keto healthLabel="&Health=keto-friendly" />
             </Route>
-            <Route exact path="/glutenFree">
+            <Route exact path="/gluten-free">
               <GlutenFree healthLabel="&Health=gluten-free" />
             </Route>
             <Route exact path="/paleo">
               <Paleo healthLabel="&Health=paleo" />
             </Route>
-            <Route exact path="/lowCarb">
+            <Route exact path="/low-carb">
               <LowCarb healthLabel="&Diet=low-carb" />
             </Route>
           </Switch>

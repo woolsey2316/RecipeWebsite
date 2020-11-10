@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./assets/sass/Tile.module.scss";
+import slugify from 'slugify'
 
 const Tile = ({ title, description, url }) => {
   return (
@@ -10,7 +11,7 @@ const Tile = ({ title, description, url }) => {
     >
       <header className={style.major}>
         <h3 className={style.h3}>
-          <a href={"/" + title.toLowerCase()} className={style.link}>
+          <a href={"/" + slugify(title, {lower: true})} className={style.link}>
             {title}
           </a>
         </h3>

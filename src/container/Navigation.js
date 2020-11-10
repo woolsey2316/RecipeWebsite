@@ -24,9 +24,10 @@ function Navigation() {
           </span>
         </a>
         <ul className={style.ul}>
-          { (showNav || isWideScreen) && routes.map(route => (
+          { (showNav || isWideScreen) && routes.map((route, index) => (
             <NavLink
               exact
+              key={index}
               className={style.link}
               activeStyle={{ color: "#b6956a" }}
               to={route.path}

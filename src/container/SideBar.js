@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ContactForm from "./ContactForm";
 import style from "../assets/sass/SideBar.module.scss";
 

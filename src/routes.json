@@ -1,12 +1,13 @@
 [
   { "name": "HOME", "path": "/", "append": "" },
   { "name": "VEGAN", "path": "/vegan", "append": "&health=vegan" },
+  { "name": "SUGAR CONSCIOUS", "path": "/sugar-conscious", "append": "&diet=low-sugar" },
   { "name": "KETO", "path": "/keto", "append": "&health=keto" },
   {
     "name": "GLUTEN FREE",
-    "path": "/glutenFree",
+    "path": "/gluten-free",
     "append": "&health=gluten-free"
   },
   { "name": "PALEO", "path": "/paleo", "append": "&health=paleo" },
-  { "name": "LOW CARB", "path": "/lowCarb", "append": "&diet=low-carb" }
+  { "name": "LOW CARB", "path": "/low-carb", "append": "&diet=low-carb" }
 ]

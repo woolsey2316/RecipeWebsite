@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Nunito:wght@600&display=swap");
 @import "colours";
 @import "fonts";
 @import "media-queries";
@@ -111,12 +111,12 @@
 }
 
 .li {
-  font-family: 'Raleway', sans-serif;
-  font-size: $font-16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: $font-15px;
+  font-weight: 600;
   display: inline;
-  text-decoration-style: none;
-  vertical-align: center;
   padding: 1em 1em;
+  transition: color 0.3s ease-in-out;
 
 }
 
