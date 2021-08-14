@@ -10,7 +10,6 @@ import LowCarb from "./pages/LowCarb";
 import SugarConscious from './pages/SugarConscious'
 
 import style from "./assets/sass/App.module.scss";
-import "./index.scss";
 
 const Home = lazy(() => import("./pages/Home"));
 

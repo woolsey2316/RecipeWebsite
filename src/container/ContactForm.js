@@ -1,5 +1,6 @@
 import React from "react";
-import Style from "../assets/sass/ContactForm.module.scss";
+import Style from "@/styles/sass/ContactForm.module.scss";
+import SubscribeModal from "@/components/SubscribeModal";
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -7,17 +8,25 @@ class ContactForm extends React.Component {
     this.state = {
       firstName: "",
       lastName: "",
-      email: ""
+      email: "",
+      modalIsOpen: false
     };
+    this.openModal = this.openModal.bind(this);
+    this.resetForm = this.resetForm.bind(this);
   }
 
   resetForm() {
     this.setState({ firstName: "", lastName: "", email: "" });
   }
 
+  openModal() {
+    this.setState({ modalIsOpen: true })
+  }
+
   render() {
     return (
       <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {this.state.modalIsOpen && <SubscribeModal></SubscribeModal>}
         <form
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
@@ -56,7 +65,7 @@ class ContactForm extends React.Component {
             </div>
           </div>
           <div className={Style.miniContainer}>
-            <button type="submit" className={Style.signupForm__submitButton}>
+            <button onClick={this.openModal} type="submit" className={Style.signupForm__submitButton}>
               Sign Up
             </button>
           </div>

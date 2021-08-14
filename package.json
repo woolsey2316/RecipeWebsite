@@ -11,53 +11,33 @@
     "classnames": "^2.2.6",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
+    "next": "^11.1.0",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-modal": "^3.14.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
     "slugify": "^1.4.6"
   },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "dotenv": "^10.0.0",
+    "prettier": "^1.19.1"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "serve": "node server.js",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "babel": {
-    "presets": [
-      "module:metro-react-native-babel-preset"
-    ],
-    "env": {
-      "production": {}
-    },
-    "plugins": [
-      [
-        "@babel/plugin-proposal-decorators",
-        {
-          "legacy": true
-        }
-      ],
-      [
-        "transform-inline-environment-variables",
-        {
-          "include": [
-            "NODE_ENV",
-            "API"
-          ]
-        }
-      ],
-      [
-        "@babel/plugin-proposal-optional-catch-binding"
-      ]
-    ]
   },
   "browserslist": {
     "production": [
@@ -70,11 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/preset-env": "^7.9.6",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "prettier": "^1.19.1"
   }
 }

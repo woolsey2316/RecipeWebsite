@@ -1,0 +1,113 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+.section {
+	background: #242943;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	display: block;
+	box-sizing: inherit;
+	-webkit-text-size-adjust: none;
+	letter-spacing: 0.025em;
+}
+
+.major {
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	width: -ms-max-content;
+	width: max-content;
+	margin-bottom: 2em;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	box-sizing: inherit;
+	letter-spacing: 0.025em;
+	
+}
+
+.inner {
+  padding: 4em 0 2em 0 ;
+  margin: 0 15%;
+  max-width: 65em;
+	border: 0;
+	font: inherit;
+	box-sizing: inherit;
+	letter-spacing: 0.025em;
+	-webkit-text-size-adjust: none;
+}
+
+.h2 {
+	color:white;
+	margin-bottom: 0;
+	width: calc(100% + 0.5em);
+	font-size: 1.75em;
+	font-weight: 600;
+	line-height: 1.65;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: inherit;
+	letter-spacing: 0.025em;
+}
+
+.h2:after {
+	content: '';
+	background-color: #ffffff;
+	display: block;
+	height: 2px;
+	margin: 0.325em 0 0.5em 0;
+	width: 100%;
+}
+
+.p {
+	color: white;
+	margin: 0em 0em 2em 0em;
+	letter-spacing: 0.25em;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	letter-spacing: 0.025em;
+}
+
+.actions {
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+	cursor: default;
+	list-style: none;
+	margin-left: -1em;
+	padding-left: 0;
+	letter-spacing: 0.025em;
+}
+
+.li {
+	padding: 0em 0em 0em 1em;
+	margin: 0;
+	border: 0;
+	font: inherit;
+	box-sizing: inherit;
+	list-style: inherit;
+}
+
+  @media screen and (max-width: 736px) {
+
+    .inner {
+      padding: 3em 0 1em 0 ;
+    }
+
+	}
+	
+	.icon {
+		color:white;
+	}

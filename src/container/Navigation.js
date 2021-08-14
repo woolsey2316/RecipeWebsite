@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import useSticky from "../hooks/useSticky.js";
 import useResize from "../hooks/useResize.js";
-import style from "../assets/sass/Navigation.module.scss";
+import style from "../styles/sass/Navigation.module.scss";
 import routes from "../routes.json";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +13,7 @@ library.add(fas);
 function Navigation() {
   const { isSticky } = useSticky();
   const { isWideScreen } = useResize();
+  const router = useRouter();
   const [showNav, setReveal] = useState(true);
 
   return (
@@ -25,15 +27,15 @@ function Navigation() {
         </a>
         <ul className={style.ul}>
           { (showNav || isWideScreen) && routes.map((route, index) => (
-            <NavLink
+            <Link
               exact
               key={index}
-              className={style.link}
-              activeStyle={{ color: "#b6956a" }}
-              to={route.path}
+              href={route.path}
             >
-              <li className={style.li}>{route.name}</li>
-            </NavLink>
+              <a className={style.link} href={route.path} style={{color: router.pathname === route.path ? "#b6956a"  : ""}}>
+                <li className={style.li}>{route.name}</li>
+              </a>
+            </Link>
           ))}
           <button type="button" onClick={() => setReveal(!showNav)} className={style.menuButton}>
             <FontAwesomeIcon className={style.icon} icon={showNav ? "times" : "bars"} />

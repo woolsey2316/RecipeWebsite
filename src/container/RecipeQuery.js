@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Recipe from "../component/Recipe";
-import SideBar from "../container/SideBar";
-import SearchResultTitle from "../component/SearchResultTitle";
-import style from "../assets/sass/RecipeQuery.module.scss";
+import Recipe from "@/components/Recipe";
+import SideBar from "@/container/SideBar";
+import SearchResultTitle from "@/components/SearchResultTitle";
+import style from "@/styles/sass/RecipeQuery.module.scss";
 
-function RecipeQuery({ append, searchTerm }) {
+function RecipeQuery({ healthLabel, searchTerm }) {
   const APP_ID = "bde76692";
   const APP_KEY = "a779c707df0015efad7cf8cee3391fe1";
 
@@ -21,7 +21,7 @@ function RecipeQuery({ append, searchTerm }) {
   useEffect(() => {
     async function getRecipes() {
       fetch(
-        `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}${append}`
+        `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&health=${healthLabel}`
       )
         .then(handleErrors)
         .then(async function(response) {
@@ -34,7 +34,7 @@ function RecipeQuery({ append, searchTerm }) {
         });
     }
     getRecipes();
-  }, [append, query]);
+  }, [healthLabel, query]);
 
   const updateSearch = e => {
     setSearch(e.target.value);

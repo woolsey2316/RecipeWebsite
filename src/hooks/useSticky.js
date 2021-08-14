@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useRouter } from 'next/router'
 
 function useSticky() {
   const [isSticky, setSticky] = useState(false);
   const [isWideScreen, setWideScreen] = useState(false);
 
-  let location = useLocation();
-  const position = location.pathname === "/" ? window.innerHeight : 145;
+  let location = useRouter();
+
+  let position = 145;
+
+  if (typeof window !== "undefined") {
+    position = location.asPath === "/" ? window.innerHeight : 145;
+  }
 
   useEffect(() => {
     const handleScroll = () => {

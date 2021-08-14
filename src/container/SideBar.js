@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ContactForm from "./ContactForm";
-import style from "../assets/sass/SideBar.module.scss";
+import style from "@/styles/sass/SideBar.module.scss";
 
 export default () => {
   let ref = useRef();
@@ -28,7 +28,7 @@ export default () => {
     <div ref={ref} className={style.outer}>
       <img
         className={style.img}
-        src={require("../assets/images/magazineCover.jpg")}
+        src="images/magazineCover.jpg"
         alt="magazine"
       ></img>
       <a className={style.subscribeButton} href="/">
