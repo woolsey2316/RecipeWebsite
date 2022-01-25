@@ -1,0 +1,22 @@
+.outer {
+    border-radius: 50px;
+    background: #F3F3F3;
+    height: 28px;
+    padding: 10px 50px 10px 20px;
+    display:flex;
+    margin-right:20px;
+    margin-bottom: 20px;
+}
+
+.label {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.addLabel {
+    cursor: pointer;
+}
+
+.removeLabel {
+    cursor: pointer;
+}

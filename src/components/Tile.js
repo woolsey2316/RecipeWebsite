@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/sass/Tile.module.scss";
+import style from "@/styles/sass/Tile.module.scss";
 import slugify from 'slugify'
 
 const Tile = ({ title, description, url }) => {

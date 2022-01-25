@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fas);
 
-export default () => {
+const Overview = () => {
   return (
     <section className={style.section} id="two">
       <div className={style.inner}>
@@ -47,3 +47,4 @@ export default () => {
     </section>
   );
 };
+export default Overview

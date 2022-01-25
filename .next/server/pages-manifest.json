@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/gluten-free": "pages/gluten-free.js",
-  "/vegan": "pages/vegan.js",
-  "/": "pages/index.js",
-  "/paleo": "pages/paleo.js"
+  "/mainSearch": "pages/mainSearch.js"
 }

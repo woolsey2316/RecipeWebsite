@@ -9,14 +9,12 @@ import Paleo from "./pages/Paleo";
 import LowCarb from "./pages/LowCarb";
 import SugarConscious from './pages/SugarConscious'
 
-import style from "./assets/sass/App.module.scss";
-
 const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
     <Router>
-      <div className={style.App}>
+      <div>
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route exact path="/" component={Home} />

@@ -2,11 +2,10 @@ import React, { useEffect, useRef } from "react";
 import ContactForm from "./ContactForm";
 import style from "@/styles/sass/SideBar.module.scss";
 
-export default () => {
+const Sidebar = () => {
   let ref = useRef();
   const scroll = () => {
     const position = window.pageYOffset;
-    console.log("event listener still here");
 
     if (position > 145) {
       ref.current.className = style.outer__sticky;
@@ -17,9 +16,7 @@ export default () => {
 
   useEffect(() => {
     window.addEventListener("scroll", scroll, { passive: true });
-    console.log("new hook created");
     return () => {
-      console.log("removed");
       window.removeEventListener("scroll", scroll);
     };
   });
@@ -43,3 +40,5 @@ export default () => {
     </div>
   );
 };
+
+export default Sidebar

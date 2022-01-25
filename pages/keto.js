@@ -3,12 +3,12 @@ import RecipeQuery from "@/container/RecipeQuery";
 import RecipeHero from "@/components/RecipeHero";
 import Navigation from "@/container/Navigation";
 
-const Keto = ({ healthLabel }) => {
+const Keto = () => {
   return (
     <React.Fragment>
       <Navigation />
-      <RecipeHero/>
-      <RecipeQuery searchTerm="chicken" healthLabel="keto" />
+      <RecipeHero type="Keto"/>
+      <RecipeQuery searchTerm="chicken" healthLabel="keto-friendly" />
     </React.Fragment>
   );
 };

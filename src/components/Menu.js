@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../assets/sass/Menu.module.scss";
+import style from "@/styles/sass/Menu.module.scss";
 
 export default () => {
   return (

@@ -4,13 +4,42 @@ import SideBar from "@/container/SideBar";
 import SearchResultTitle from "@/components/SearchResultTitle";
 import style from "@/styles/sass/RecipeQuery.module.scss";
 
-function RecipeQuery({ healthLabel, searchTerm }) {
+function RecipeQuery({ healthLabel, diet, searchTerm, labels }) {
   const APP_ID = "bde76692";
   const APP_KEY = "a779c707df0015efad7cf8cee3391fe1";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState(searchTerm);
+
+  if (labels) {
+    healthLabel = Object.values(labels)[0].reduce((curr, prev, index) => { 
+      if (index !== 0 ) {
+        return curr += "&" + prev 
+      } else {
+        return curr += prev;
+      }
+    },"")
+    diet = Object.values(labels)[1].reduce((curr, prev, index) => { 
+      if (index !== 0 ) {
+        return curr += "&" + prev 
+      } else {
+        return curr += prev;
+      }
+    },"")
+  }
+  
+  let url = ""
+  
+  if (healthLabel && diet) {
+    url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&health=${healthLabel}&Diet=${diet}`
+  } else if (healthLabel) {
+    url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&health=${healthLabel}`
+  } else if (diet) {
+    url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&Diet=${diet}`
+  } else {
+    url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
+  }
 
   function handleErrors(response) {
     if (!response.ok) {
@@ -20,13 +49,10 @@ function RecipeQuery({ healthLabel, searchTerm }) {
   }
   useEffect(() => {
     async function getRecipes() {
-      fetch(
-        `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&health=${healthLabel}`
-      )
+      fetch(url)
         .then(handleErrors)
         .then(async function(response) {
           const data = await response.json();
-          console.log(data);
           setRecipes(data.hits);
         })
         .catch(error => {

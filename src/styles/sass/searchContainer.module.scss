@@ -1,0 +1,23 @@
+.outer {
+    max-width: 320px;
+    width: 100%;
+    background: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+}
+
+.searchButton {
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 6px 50px;
+    font-weight: 500;
+    background-color: #7aca25;
+    border-color: #7aca25;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}

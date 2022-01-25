@@ -3,12 +3,12 @@ import RecipeQuery from "@/container/RecipeQuery";
 import RecipeHero from "@/components/RecipeHero";
 import Navigation from "@/container/Navigation";
 
-export default ({ healthLabel }) => {
+export default () => {
   return (
     <React.Fragment>
       <Navigation />
-      <RecipeHero/>
-      <RecipeQuery searchTerm="cake" healthLabel="low-carb" />
+      <RecipeHero type="Low-Carb"/>
+      <RecipeQuery searchTerm="cake" diet="low-carb" />
     </React.Fragment>
   );
 };
