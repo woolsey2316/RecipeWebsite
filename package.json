@@ -14,7 +14,7 @@
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "^11.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "path": "^0.12.7",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
