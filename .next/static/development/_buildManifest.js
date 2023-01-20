@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = {__rewrites:{beforeFiles:[],afterFiles:[],fallback:[]},"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/gluten-free":["static\u002Fchunks\u002Fpages\u002Fgluten-free.js"],sortedPages:["\u002F_app","\u002F_error","\u002Fgluten-free"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

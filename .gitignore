@@ -1,5 +1,15 @@
-# next
-.next\
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
 # Logs
 logs
 *.log
