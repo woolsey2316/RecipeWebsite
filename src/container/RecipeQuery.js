@@ -5,8 +5,8 @@ import SearchResultTitle from "@/components/SearchResultTitle";
 import style from "@/styles/sass/RecipeQuery.module.scss";
 
 function RecipeQuery({ healthLabel, diet, searchTerm, labels }) {
-  const APP_ID = "bde76692";
-  const APP_KEY = "a779c707df0015efad7cf8cee3391fe1";
+  const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
+  const APP_KEY = process.env.NEXT_PUBLIC_APP_KEY;
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");

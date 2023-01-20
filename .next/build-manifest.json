@@ -24,10 +24,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/mainSearch": [
+    "/gluten-free": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/mainSearch.js"
+      "static/chunks/pages/gluten-free.js"
     ]
   },
   "ampFirstPages": []
