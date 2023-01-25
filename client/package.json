@@ -1,0 +1,63 @@
+{
+  "name": "recipewebsite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "classnames": "^2.2.6",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "next": "^11.1.0",
+    "path": "^0.12.7",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.14.3",
+    "react-router-dom": "^5.1.2",
+    "remark": "^14.0.1",
+    "remark-html": "^15.0.0",
+    "sass": "^1.57.1",
+    "slugify": "^1.4.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "dotenv": "^10.0.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

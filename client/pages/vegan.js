@@ -3,7 +3,7 @@ import RecipeQuery from "@/container/RecipeQuery";
 import Navigation from "@/container/Navigation";
 import RecipeHero from "@/components/RecipeHero";
 
-export default () => {
+const vegan = () => {
   return (
     <React.Fragment>
       <Navigation />
@@ -12,3 +12,5 @@ export default () => {
     </React.Fragment>
   );
 };
+
+export default vegan

@@ -2,6 +2,9 @@ import React, { Suspense, lazy } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import UnPrivateRoute from './hocs/UnPrivateRoute';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Vegan from "./pages/Vegan";
 import Keto from "./pages/Keto";
 import GlutenFree from "./pages/GlutenFree";
@@ -18,6 +21,8 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route exact path="/" component={Home} />
+            <UnPrivateRoute path="/login" component={Login}/>
+            <UnPrivateRoute path="/register" component={Register}/>
             <Route exact path="/vegan">
               <Vegan healthLabel="&Health=vegan" />
             </Route>
