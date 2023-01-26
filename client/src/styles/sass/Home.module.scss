@@ -2,94 +2,209 @@
 @import "fonts";
 @import "media-queries";
 
-@-moz-keyframes reveal-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
+.header {
+  background-color: $lightGreen;
+}
 
-  100% {
-    top: 0;
-    opacity: 1;
+.topHeader {
+  background-color: #f4f7ea;
+
+}
+
+.container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
   }
 }
 
-@-webkit-keyframes reveal-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
+.topInnerBg {
+  background-color: $greenColor;
+  padding: 7px 20px;
+  border-radius: 3px;
+}
 
-  100% {
-    top: 0;
-    opacity: 1;
+.row {
+  display: flex;
+  align-items: center
+}
+
+.welcome {
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 33.33%;
   }
 }
 
-@-ms-keyframes reveal-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
+.welcomeText {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-  100% {
-    top: 0;
-    opacity: 1;
+.innerRight {
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 66.66%;
   }
 }
 
-@keyframes reveal-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
+.rightHeader {
+  float: right;
+  align-items: center;
+  display: flex;
+}
 
-  100% {
-    top: 0;
-    opacity: 1;
+.headerItem {
+  margin-right: 30px;
+}
+
+.uList {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+}
+
+.listItem {
+  display: inline-block;
+  margin-right: 10px;
+  color: $greenColor;
+  background-color: white;
+  height:30px;
+  width: 30px;
+  cursor: pointer;
+  :hover {
+    transition: all 0.3s linear;
+    background-color: $black1;
+    color: white;
   }
 }
 
-  .wrapper {
-    -moz-transition: -moz-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-    -webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-    -ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-    transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-    margin: 0;
-    padding: 0;
-    padding-top: 0px;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    
-  }
-  
-    .wrapper.is-transitioning {
-      opacity: 0;
-    }
-  
-    .inner {
-      padding: 4em 0 2em 0 ;
-      margin: 0 auto;
-      max-width: 65em;
-      width: calc(100% - 6em);
-    }
-  
-      @media screen and (max-width: 736px) {
-  
-        .inner {
-          padding: 3em 0 1em 0 ;
-          width: calc(100% - 3em);
-        }
-  
-      }
-  
-    @media screen and (max-width: 736px) {
-  
-      .wrapper {
-        padding-top: 2.75em;
-      }
-  
-    }
+.iconWrap {
+  display: flex;
+  color: inherit;
+  height: 100%;
+}
 
-    
+.icon {
+  color: inherit;
+  margin: auto;
+  display: block;
+}
+
+.shoppingBagWrap {
+  cursor: pointer;
+  :hover {
+    fill: $black1;
+  }
+}
+
+.shoppingBagIcon {
+  height: 25px;
+  width: 25px;
+  fill: white;
+  
+}
+
+.languageDropdown {
+  display: inline-block;
+  position: relative;
+  top: 0;
+}
+
+.dropdownToggle {
+  color: white;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+}
+
+.show {
+  transform: translateY(40px) !important;
+  opacity: 1 !important;
+}
+
+.dropdownMenu {
+  right: 0;
+  left: auto;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 9px 54px 0px rgba(32,32,32,.1);
+  transform: translateY(100px);
+  transition: all 0.3s linear;
+  position: absolute;
+  z-index: 1000;
+  min-width: 10rem;
+  font-size: 1rem;
+  color: $darkBlue;
+  background-color: white;
+  opacity: 0;
+}
+
+.language {
+  margin-left: 8px;
+}
+
+.chevronDown {
+  border: 0;
+  margin-left: 2px;
+  height: 14px;
+  width: 14px;
+  fill: white;
+}
+
+.nationalityIcon {
+  width: 20px;
+  height: 20px;
+  margin: 3px 10px 0 5px;
+}
+
+.dropdownOption {
+  padding: 5px 10px;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all .3s linear;
+}
+
+.dropdownOption:hover {
+  background-color: $lightGrey;
+}
+
+.languageOption {
+  display: inline-block;
+  height: 100%;
+}

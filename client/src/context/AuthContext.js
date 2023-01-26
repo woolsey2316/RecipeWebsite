@@ -1,12 +1,12 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 import AuthService from '../Services/AuthService';
 
-export const AuthConectext = createContext();
+export const AuthContext = createContext();
 
 const reducer = (authState, action) => {
   let newAuthState
   switch (action.type) {
-    case "COMPLETE_LOGIN":
+    case "LOGIN_COMPLETE":
       newAuthState = {
         user: action.payload,
         isAuthenticated: true,
@@ -32,11 +32,21 @@ const initialState = {
   isLoaded: false
 }
 export default ({ children }) => {
-  const [auth, dispatch] = useState(reducer, initialState);
+  const [auth, dispatch] = useReducer(reducer, initialState);
   
   useEffect(() => {
     AuthService.isAuthenticated().then(data => {
-      dispatch("COMPLETE_LOGIN")
+      dispatch("LOGIN_COMPLETE")
     })
-  })
+  },[]);
+
+  return (
+    <div>
+      {/* {!auth.isLoaded ? <h1>Loading</h1> :  */}
+      <AuthContext.Provider value={{auth,dispatch}}>
+        { children }
+      </AuthContext.Provider>
+      {/* } */}
+    </div>
+  )
 }
