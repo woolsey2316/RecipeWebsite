@@ -1,0 +1,78 @@
+$string = a string starting with a dollar sign
+%number = percentage, 0.59 for 59%
+
+Net Production and Income =
+  {
+    month: string ex "May 2020",
+    NetProd: $string,
+    Income: $string,
+    ColPot: %number,
+  }
+  
+Net production per Day = 
+	{
+		month: string
+		NetPerDay: $string
+	}
+Monthly KPI Report
+
+Net Porduction per Hour = 
+	{
+		NetPerHour=$string
+		month: string
+	}
+Patients seen and appointment rate
+	{
+		patientsSeen: number
+		reAppRate: %number
+	}
+Broken and total appiontments
+	{
+		totApps: number
+		BrokenAppts: number
+		Broken%: %number
+	}
+Dentist and Hygienist Net Production
+	{
+		Dentist: $string
+		hygenists: $string
+		hyg%: %number
+	}
+Monthly KPI Report - Cedar Park Dental and Braces
+	{
+		CaseAccept: %number
+	}
+Case Acceptance by Proc Fee
+	{
+		feesTP: $string
+		FeesAcceptPet: %number
+	}
+Net Production, By Provider
+	{
+		cedar park: $string
+		Dave Goldwyn: $string
+		Diana: $string
+		Kimberlie: $string
+		Michael: $string
+		TEMP: $string
+		vLan: $string
+		Vian: $string
+	}
+	
+Practice totals
+	{
+		Month: string
+		grossProd: number
+		adj+WO: number
+		NetProd: number
+		PatIncome: number
+		InsIncome: number
+		income: number
+		ColPct: %number
+		NPs: number
+		Attritions: number
+		Hours: number
+		Days: number
+		PatAcpt%: %number
+		ReAppt%: %number
+	}

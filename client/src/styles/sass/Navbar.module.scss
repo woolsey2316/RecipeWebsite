@@ -1,0 +1,179 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+.nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbarBrand{
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.innerNavWrap {
+  display: flex !important;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navList {
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+}
+
+.navItem {
+  &:hover ul {
+    top: 100%;
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navLink {
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  font-family: var(--headerFonts);
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: $black4;
+}
+
+.chevronDown {
+  border: 0;
+  margin-left: 5px;
+  height: 14px;
+  width: 14px;
+  fill: black;
+}
+
+.dropDownMenu {
+  background: white;
+  border: none;
+  border-top: 2px solid #72ae44;
+  border-bottom: 2px solid #72ae44;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  border-radius: 5px;
+  display: block;
+  width: 250px;
+  z-index: 99;
+  opacity: 0;
+  top: 80px;
+  left: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.navListItem {
+  position: relative;
+  padding: 0;
+  border-bottom: 1px solid $white1;
+}
+
+.link {
+  &:hover {
+    color: $greenColor;
+    transition: all 0.15s ease-in-out;
+  }
+  color: $black1;
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.otherOptions {
+  align-items: center;
+  display: flex;
+}
+
+.optionalItem {
+  &:last-child {
+    margin-right: 0;
+  }
+  margin-right: 30px;
+}
+
+.searchIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.appointmentButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.appointmentButton {
+  padding: 10px 30px;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  text-transform: capitalize;
+  transition: 0.5s;
+  background-color: $black1;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  &:hover:before {
+    background-color: $greenColor;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  &:hover svg {
+    transition: all 0.6s;
+    fill: $greenColor;
+  }
+}
