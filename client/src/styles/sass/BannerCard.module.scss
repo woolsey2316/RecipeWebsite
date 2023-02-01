@@ -1,0 +1,118 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+.outer:hover {
+  border: 1px solid $greenColor;
+}
+
+.outer:hover::before {
+  height: 100%;
+  opacity: 1;
+}
+
+.outer {
+  padding: 30px 30px 25px;
+  border: 1px dashed $greenColor;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.outer:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: $greenColor;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.iconWrap {
+  position: relative;
+  fill: $greenColor;
+}
+
+.iconWrap:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #cfeaba;
+}
+
+.outer:hover .title {
+  color: white;
+}
+
+.outer:hover .text {
+  color: white;
+}
+
+.outer:hover .learnMore {
+  color: white;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.text {
+
+}
+
+.learnMore {
+  color: $greenColor;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.motionlessImage {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.outer:hover .animatedImage {
+  position: absolute;
+  top: 25px;
+  opacity: 1;
+}
+
+.outer:hover .motionlessImage {
+  opacity: 0;
+}
+
+.outer:hover .iconWrap {
+  fill: white;
+}
+
+.animatedImage {
+  position: absolute;
+  top: -125px;
+  right: 25px;
+  opacity: 0;
+  transition: var(--transition);
+  animation: rotated360 15s infinite linear;
+}
+
+@keyframes rotated360 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
