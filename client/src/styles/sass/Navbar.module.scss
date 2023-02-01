@@ -133,41 +133,6 @@
   width: 20px;
 }
 
-.appointmentButton:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-  left: 0;
-  right: 0;
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-
-.appointmentButton {
-  padding: 10px 30px;
-  color: white;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-  text-transform: capitalize;
-  transition: 0.5s;
-  background-color: $black1;
-  border: none;
-  outline: none;
-  display: inline-block;
-  text-decoration: none;
-  &:hover:before {
-    background-color: $greenColor;
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 .button {
   background-color: white;
   border: none;

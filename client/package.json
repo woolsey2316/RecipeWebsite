@@ -23,6 +23,7 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-modal": "^3.14.3",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.1.2",
     "remark": "^14.0.1",
     "remark-html": "^15.0.0",
