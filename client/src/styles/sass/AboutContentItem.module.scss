@@ -1,0 +1,47 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+.outer {
+  padding-left: 65px;
+  position: relative;
+  margin-bottom: 25px;
+  fill: white;
+
+}
+
+.outer:hover > div {
+  background: $black1;
+  transition: 0.5s
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
+  background-color: $greenColor;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 26px;
+  transition: 0.3s ease-in-out;
+}
+
+.text {
+  color: $black4;
+  margin: 0;
+}
+
+.outer:hover .heading {
+  transition: 0.5s;
+  color: $greenColor;
+}
+
+.heading {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
