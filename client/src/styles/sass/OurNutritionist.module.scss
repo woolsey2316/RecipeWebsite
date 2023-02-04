@@ -1,0 +1,53 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+.outer {
+  padding-bottom: 70px;
+}
+
+.sectionTitle {
+  text-align: center;
+}
+
+.title {
+  padding-bottom: 22px;
+  display: inline-block;
+  line-height: 0;
+  font-size: 15px;
+  color: $greenColor;
+  position: relative;
+  font-weight: 500;
+}
+
+.largeTitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0;
+  line-height: 1.2;
+  color: $black1;
+  margin-bottom: 0;
+}
+
+.cardWrap {
+  max-width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @media (min-width: 576px) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.cardContainer {
+  padding-top: 45px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+}

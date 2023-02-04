@@ -4,6 +4,7 @@ import NavBar from '../src/components/NavBar'
 import MainCarousel from '../src/components/MainCarousel'
 import BannerBottom from '../src/components/BannerBottom'
 import AboutArea from '../src/components/AboutArea'
+import OurNutritionist from '../src/components/OurNutritionist.js'
 
 const index = () => {
   return ( 
@@ -13,6 +14,7 @@ const index = () => {
       <MainCarousel />
       <BannerBottom />
       <AboutArea />
+      <OurNutritionist />
     </div> 
   );
 }
