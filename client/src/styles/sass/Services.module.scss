@@ -1,0 +1,55 @@
+@import "colours";
+@import "fonts";
+@import "media-queries";
+
+.outer {
+  background-color: $lightGreen3;
+  padding-top: 100px;
+  padding-bottom: 70px; 
+}
+
+.cardContainer {
+  padding-top: 45px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.col {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @media (min-width: 768px) {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+  @media (min-width: 992px) {
+      flex: 0 0 auto;
+      width: 33.33%;
+  }
+
+}
+
+.sectionTitle {
+  text-align: center;
+}
+
+.title {
+  padding-bottom: 22px;
+  display: inline-block;
+  line-height: 0;
+  font-size: 15px;
+  color: $greenColor;
+  position: relative;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 1.2;
+    color: $black1;
+    margin-bottom: 0;
+}
