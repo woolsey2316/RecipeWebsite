@@ -6,6 +6,7 @@ import BannerBottom from '../src/components/BannerBottom'
 import AboutArea from '../src/components/AboutArea'
 import OurNutritionist from '../src/components/OurNutritionist.js'
 import Services from '../src/components/Services.js'
+import HowItWorks from '../src/components/HowItWorks.js'
 
 const index = () => {
   return ( 
@@ -17,6 +18,7 @@ const index = () => {
       <AboutArea />
       <OurNutritionist />
       <Services />
+      <HowItWorks />
     </div> 
   );
 }
