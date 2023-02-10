@@ -8,6 +8,7 @@ import OurNutritionist from '../src/components/OurNutritionist'
 import Services from '../src/components/Services'
 import HowItWorks from '../src/components/HowItWorks'
 import WhyChoose from '../src/components/WhyChoose'
+import PricingPlan from '../src/components/PricingPlan'
 
 const index = () => {
   return ( 
@@ -21,6 +22,7 @@ const index = () => {
       <Services />
       <HowItWorks />
       <WhyChoose />
+      <PricingPlan />
     </div> 
   );
 }

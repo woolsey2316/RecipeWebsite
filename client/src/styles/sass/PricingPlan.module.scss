@@ -1,0 +1,74 @@
+@import "colours";
+@import "fonts";
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.sectionTitle {
+  text-align: center
+}
+
+.title {
+  padding-bottom: 22px;
+  display: inline-block;
+  line-height: 0;
+  font-size: 15px;
+  color: $greenColor;
+  position: relative;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0;
+  line-height: 1.2;
+  color: $black1;
+  margin-bottom: 0;
+}
+
+.pricingShape {
+  position: absolute;
+  bottom: 170px;
+  left: 0;
+  animation: movebounce-up 15s infinite linear;
+}
+
+.inner {
+  padding-top: 45px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.col {
+  max-width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @media (min-width: 768px) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+}
+
+@keyframes movebounce-up {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
