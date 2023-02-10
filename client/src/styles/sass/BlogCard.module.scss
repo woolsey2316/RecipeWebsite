@@ -1,0 +1,54 @@
+@import "colours";
+@import "fonts";
+
+.outer:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.outer:hover h3 {
+  color: $greenColor;
+}
+
+.outer {
+  margin-bottom: 30px;
+  transition: 0.5s all linear;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.date {
+  display: block;
+  color: $greenColor;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-bottom: 10px;
+  max-width: 350px;
+  font-size: 20px;
+  transition: 0.5s all linear;
+}
+
+.readMore {
+  font-weight: 600;
+  color: $greenColor;
+  display: block;
+  text-decoration: none;
+}
+
+.calendar {
+  margin-right: 7px;
+}

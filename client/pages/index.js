@@ -9,6 +9,7 @@ import Services from '../src/components/Services'
 import HowItWorks from '../src/components/HowItWorks'
 import WhyChoose from '../src/components/WhyChoose'
 import PricingPlan from '../src/components/PricingPlan'
+import LatestFromBlog from '../src/components/LatestFromBlog'
 
 const index = () => {
   return ( 
@@ -23,6 +24,7 @@ const index = () => {
       <HowItWorks />
       <WhyChoose />
       <PricingPlan />
+      <LatestFromBlog />
     </div> 
   );
 }
