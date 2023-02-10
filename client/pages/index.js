@@ -4,9 +4,10 @@ import NavBar from '../src/components/NavBar'
 import MainCarousel from '../src/components/MainCarousel'
 import BannerBottom from '../src/components/BannerBottom'
 import AboutArea from '../src/components/AboutArea'
-import OurNutritionist from '../src/components/OurNutritionist.js'
-import Services from '../src/components/Services.js'
-import HowItWorks from '../src/components/HowItWorks.js'
+import OurNutritionist from '../src/components/OurNutritionist'
+import Services from '../src/components/Services'
+import HowItWorks from '../src/components/HowItWorks'
+import WhyChoose from '../src/components/WhyChoose'
 
 const index = () => {
   return ( 
@@ -19,6 +20,7 @@ const index = () => {
       <OurNutritionist />
       <Services />
       <HowItWorks />
+      <WhyChoose />
     </div> 
   );
 }
