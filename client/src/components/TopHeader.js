@@ -23,7 +23,9 @@ function TopHeader() {
         <div className={styles.topInnerBg}>
           <div className={styles.row}>
             <div className={styles.welcome}>
-              <p className={styles.welcomeText}>Welcome To Arrola Health!</p>
+              <div className={styles.headerLeft}>
+                <p className={styles.welcomeText}>Welcome To Arrola Health!</p>
+              </div>
             </div>
             <div className={styles.innerRight}>
               <div className={styles.rightHeader}>

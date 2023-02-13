@@ -1,0 +1,258 @@
+@import "colours";
+@import "fonts"; 
+
+.container {
+  background-color: $black2; 
+}
+
+.footerTop {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.col1 {
+  max-width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @media (min-width: 576px) {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.col2 {
+  max-width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @media (min-width: 576px) {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+.col3 {
+  max-width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @media (min-width: 576px) {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+}
+
+.footerWidget {
+  margin-bottom: 30px;
+}
+
+.footerLogo {
+  margin-bottom: 20px;
+  position: relative;
+  top: -5px;
+}
+
+.footerLogoLink {
+  display: inline-block;
+}
+
+.footerLogoImg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.footerText {
+  margin-bottom: 25px;
+  color: white;
+}
+
+.socialLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.usefulLinks {
+  margin-bottom: 30px;
+  padding-left: 3rem;
+}
+
+.linksHeading {
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: $greenColor;
+  line-height: 1.2;
+}
+
+.linksList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.usefulLink {
+  cursor: pointer;
+  color: white;
+  &:hover {
+    color: $greenColor;
+    letter-spacing: 0.2px;
+  }
+}
+
+.information {
+  margin-bottom: 30px;
+  padding-left: 3rem;
+}
+
+.informationHeading {
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: $greenColor;
+  line-height: 1.2;
+}
+
+.informationLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.infoLi {
+  position: relative;
+  color: $greenColor;
+  padding-bottom: 40px;
+}
+
+.infoText {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  color: white;
+}
+
+.infoLink {
+  &:hover {
+    color: $greenColor;
+  }
+  color: white;
+  text-decoration: none;
+  transition: 0.5s all linear;
+}
+
+.newsletterWidget {
+  margin-bottom: 30px;
+  padding-left: 3rem
+}
+
+.newsletterHeading {
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: $greenColor;
+  line-height: 1.2;
+}
+
+.newsletterText {
+  margin-bottom: 25px;
+  color: white;
+}
+
+.newsletterArea {
+
+}
+
+.newsletterForm {
+  position: relative;
+}
+
+.emailInput {
+  background: $black3;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  padding: 0 25px;
+  max-width: 100%;
+  color: white;
+  border: 1px solid white;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  appearance: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.subscribeButton {
+  margin-top: 15px;
+  background-color: $greenColor;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  border: 0;
+  transition: 0.5s all linear;
+  text-align: center;
+}
+
+.copyright {
+  border-top: 1px solid $greenColor3;
+  padding: 15px 0;
+}
+
+.inner {
+  text-align: center;
+}
+
+.copyrightText {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.copyrightLink {
+  color: $greenColor;
+  font-weight: 500;
+}
+
+.icon {
+  &:hover {
+    color: white;
+  }
+  cursor: pointer;
+  color: $greenColor;
+  height: 26px;
+  width: 26px;
+  font-size: 2.5rem;
+}

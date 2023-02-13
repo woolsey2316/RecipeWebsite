@@ -10,6 +10,7 @@ import HowItWorks from '../src/components/HowItWorks'
 import WhyChoose from '../src/components/WhyChoose'
 import PricingPlan from '../src/components/PricingPlan'
 import LatestFromBlog from '../src/components/LatestFromBlog'
+import FooterArea from '../src/components/FooterArea'
 
 const index = () => {
   return ( 
@@ -25,6 +26,7 @@ const index = () => {
       <WhyChoose />
       <PricingPlan />
       <LatestFromBlog />
+      <FooterArea />
     </div> 
   );
 }

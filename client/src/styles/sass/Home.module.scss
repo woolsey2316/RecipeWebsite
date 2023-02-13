@@ -19,20 +19,39 @@
 
 .row {
   display: flex;
-  align-items: center
+  flex-wrap: wrap;
+  align-items: center;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .welcome {
-  @media (min-width: 992px) {
-    flex: 0 0 auto;
-    width: 25%;
-  }
   @media (min-width: 768px) {
     flex: 0 0 auto;
     width: 33.33%;
   }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
 }
 
+.headerLeft {
+  @media only screen and (max-width: 767px) {
+    padding-top: 5px;
+    float: none;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
 .welcomeText {
   color: white;
   margin: 0;
@@ -40,13 +59,13 @@
 }
 
 .innerRight {
-  @media (min-width: 992px) {
-    flex: 0 0 auto;
-    width: 75%;
-  }
   @media (min-width: 768px) {
     flex: 0 0 auto;
     width: 66.66%;
+  }
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 75%;
   }
 }
 
@@ -86,6 +105,10 @@
     background-color: $black1;
     color: white;
   }
+}
+
+.listItem:last-child {
+  margin-right: 0px;
 }
 
 .iconWrap {
