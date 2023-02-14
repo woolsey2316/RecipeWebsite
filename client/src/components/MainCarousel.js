@@ -23,7 +23,7 @@ function MainCarousel() {
           <Container>
             <div className={styles.grid}>
               <div className={styles.gridLeft}>
-                <div>
+                <div className={styles.inner}>
                   <h2 className={styles.heading}>Good Nutrition Prevent Your Disease</h2>
                   <p className={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore 
@@ -45,7 +45,7 @@ function MainCarousel() {
           <Container>
             <div className={styles.grid}>
               <div className={styles.gridLeft}>
-                <div>
+                <div className={styles.inner}>
                   <h2 className={styles.heading}>Healthy and Delicious Baked Pasta</h2>
                   <p className={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore 
@@ -67,7 +67,7 @@ function MainCarousel() {
           <Container>
             <div className={styles.grid}>
               <div className={styles.gridLeft}>
-                <div>
+                <div className={styles.inner}>
                   <h2 className={styles.heading}>Nourishing with Healthy Food Choices</h2>
                   <p className={styles.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore 

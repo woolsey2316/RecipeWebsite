@@ -52,7 +52,7 @@ $icon-size: $font-24px;
   padding: .4em;
   height: $icon-size;
   width: $icon-size;
-  background-color: white;
+  background-color: $white;
   border-radius: 50%;
   transition: background-color 0.2s ease-in-out;
   &:hover {

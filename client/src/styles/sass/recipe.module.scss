@@ -15,7 +15,7 @@
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.05);
-  background: white;
+  background: $white;
   @media #{$mq-small} {
     max-width: 45%;
   }
@@ -27,7 +27,7 @@
 .showMoreButton {
   margin-top: 0.5em;
   clear: both;
-  background-color: white;
+  background-color: $white;
   font-family: $normal-text;
   font-weight: 500;
   -webkit-border: none;

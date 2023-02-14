@@ -7,7 +7,7 @@
     transform: translateX(-10px);
   }
   margin-bottom: 30px;
-  background-color: white;
+  background-color: $white;
   border-radius: 5px;
   transition: 0.5s all linear;
 }
@@ -43,7 +43,7 @@
   padding: 8px 16px;
   font-size: 15px;
   background-color: $greenColor;
-  color: white;
+  color: $white;
   display: inline-block;
   transition: 0.5s all linear;
   text-decoration: none;

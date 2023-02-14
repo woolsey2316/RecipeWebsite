@@ -1,0 +1,122 @@
+@import "colours";
+@import "fonts";
+
+.outer {
+  @media only screen and (max-width: 991px) {
+    display: block;
+  }
+  display: none;
+}
+
+.inner {
+  position: relative;
+}
+
+.meanBar {
+  background: transparent;
+  position: absolute;
+  z-index: 999;
+  padding: 0;
+  float: left;
+  width: 100%;
+  min-height: 42px;
+}
+
+.navButton {
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: -2px;
+  padding: 0;
+  width: 35px;
+  height: 30px;
+  padding-top: 6px;
+  color: $greenColor;
+  background: transparent;
+  border: none;
+}
+
+.meanNav {
+  margin-top: 55px;
+  background-color: #ffffff;
+  float: left;
+  width: 100%;
+}
+
+.navBar {
+  display: none;
+  font-size: 15px;
+  border: none;
+  max-height: 50vh;
+  overflow-y: scroll;
+  box-shadow: 0 7px 13px 0 rgb(0 0 0 / 10%);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.navItem {
+  position: relative;
+  float: left;
+  width: 100%;
+  @media only screen and (max-width: 991px) {
+    font-size: 15px;
+  }
+}
+
+.navLink {
+  color: $black;
+  border-top-color: $white2;
+  text-transform: capitalize;
+}
+
+.mobileNav {
+  @media only screen and (max-width: 991px) {
+    display: inline-block;
+  }
+  position: absolute;
+  top: -2px;
+  right: 50px;
+  display: none;
+}
+
+.mobileNavInner {
+  align-items: center;
+  display: flex;
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 15px;
+  }
+}
+
+.searchButton {
+  background: transparent;
+  border: none;
+}
+
+.searchWrap {
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.menuIcon {
+  display: block;
+  background: $greenColor;
+  height: 4px;
+  margin-top: -16px;
+  border-radius: 3px;
+  position: relative;
+  top: 8px;
+}
+
+.logo {
+  position: relative;
+  width: 120px;
+  z-index: 999;
+}

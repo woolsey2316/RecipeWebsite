@@ -6,6 +6,9 @@
   padding-bottom: 50px; 
 }
 .carouselWrap:before {
+  @media (max-width: 991px) {
+    height: 100%;
+  }
   content: '';
   position: absolute;
   z-index: -1;
@@ -23,19 +26,24 @@
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
 }
 
 .gridLeft {
-  flex: 0 0 auto;
-  width: 50%;
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  width: 100%;
 }
 
 .gridRight {
-  flex: 0 0 auto;
-  width: 50%;
+  @media (min-width: 992px) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  width: 100%;
   padding-left: 30px;
 }
 
@@ -43,9 +51,23 @@
   border-bottom-left-radius: 30px;
 }
 
-.heading {
-  margin: 0 0 20px 0;
+.inner {
+  @media (max-width: 991px) {
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
   text-align: start;
+}
+
+.heading {
+  @media (max-width: 991px) {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  margin: 0 0 20px 0;
+  text-align: inherit;
   font-size: 55px;
   color: $black1;
 }
@@ -54,7 +76,7 @@
   margin: 0 0 25px 0;
   color: $black4;
   line-height: 25.6px;
-  text-align: start;
+  text-align: inherit;
 }
 
 .dot:before {
@@ -105,9 +127,16 @@
 }
 
 .buttonBanner {
+  @media (max-width: 991px) {
+    display: block;
+  }
   display: flex;
   gap: 20px;
   justify-items: center;
+}
+
+.buttonBanner > a:nth-child(1) {
+  margin-right: 20px;
 }
 
 .leaf1 {

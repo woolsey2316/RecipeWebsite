@@ -3,7 +3,7 @@
 
 .outer {
   padding: 35px;
-  background-color: white;
+  background-color: $white;
   margin-bottom: 30px;
   position: relative;
   z-index: 1;
@@ -47,7 +47,7 @@
   height: 0%;
   opacity: 0;
   transition: 0.5s all linear;
-  background-color: white;
+  background-color: $white;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
 }
@@ -62,7 +62,7 @@
 }
 
 .title {
-  color: white;
+  color: $white;
   font-size: 20px;
   display: block;
   margin-top: 10px;
@@ -76,7 +76,7 @@
   width: 80px;
   height: 80px;
   line-height: 80px;
-  background-color: white;
+  background-color: $white;
   border-radius: 50px;
   margin-bottom: 0;
   text-align: center;

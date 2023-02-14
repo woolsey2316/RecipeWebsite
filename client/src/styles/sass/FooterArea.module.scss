@@ -80,7 +80,7 @@
 
 .footerText {
   margin-bottom: 25px;
-  color: white;
+  color: $white;
 }
 
 .socialLinks {
@@ -120,7 +120,8 @@
 
 .usefulLink {
   cursor: pointer;
-  color: white;
+  transition: 0.25s all linear;
+  color: $white;
   &:hover {
     color: $greenColor;
     letter-spacing: 0.2px;
@@ -156,16 +157,16 @@
   position: absolute;
   top: 0;
   left: 90px;
-  color: white;
+  color: $white;
 }
 
 .infoLink {
   &:hover {
     color: $greenColor;
   }
-  color: white;
+  color: $white;
   text-decoration: none;
-  transition: 0.5s all linear;
+  transition: 0.25s all linear;
 }
 
 .newsletterWidget {
@@ -183,7 +184,7 @@
 
 .newsletterText {
   margin-bottom: 25px;
-  color: white;
+  color: $white;
 }
 
 .newsletterArea {
@@ -204,7 +205,7 @@
   border: none;
   padding: 0 25px;
   max-width: 100%;
-  color: white;
+  color: $white;
   border: 1px solid white;
   display: block;
   width: 100%;
@@ -217,7 +218,7 @@
 .subscribeButton {
   margin-top: 15px;
   background-color: $greenColor;
-  color: white;
+  color: $white;
   height: 50px;
   line-height: 50px;
   width: 100%;
@@ -236,7 +237,7 @@
 }
 
 .copyrightText {
-  color: white;
+  color: $white;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -248,7 +249,7 @@
 
 .icon {
   &:hover {
-    color: white;
+    color: $white;
   }
   cursor: pointer;
   color: $greenColor;

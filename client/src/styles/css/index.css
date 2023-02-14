@@ -24,6 +24,19 @@ code {
   height: 25px;
 }
 
+@media (max-width: 991px) {
+  .control-dots {
+    position: inherit;
+    top: 100%;
+    left: 0;
+    display: inline-block;
+  }
+}
+
+.carousel.carousel-slider {
+  overflow: visible !important;
+}
+
 .selected h2 {
   animation-duration: 1s;
   animation-fill-mode: both;

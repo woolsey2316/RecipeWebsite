@@ -54,15 +54,15 @@
 }
 
 .outer:hover .title {
-  color: white;
+  color: $white;
 }
 
 .outer:hover .text {
-  color: white;
+  color: $white;
 }
 
 .outer:hover .learnMore {
-  color: white;
+  color: $white;
 }
 
 .title {
@@ -96,7 +96,7 @@
 }
 
 .outer:hover .iconWrap {
-  fill: white;
+  fill: $white;
 }
 
 .animatedImage {
